@@ -1,0 +1,12 @@
+@import './variables';
+
+#welcome-screen { 
+    color: $white;
+    background-color: transparentize($color: $primary, $amount: 0.3);
+    h1 {
+        margin-bottom: $spacer;
+    }
+    h2 { 
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,24 @@
+/* SCSS RGB */
+$hunter-green: rgba(62, 86, 65, 1);
+$crimson-ua: rgba(166, 38, 57, 1);
+$alabaster: rgba(224, 226, 219, 1);
+$copper: rgba(181, 127, 80, 1);
+$blue-bell: rgba(142, 141, 190, 1);
+$blue-sapphire: rgba(5, 102, 141, 1);
+
+
+$primary: $crimson-ua;
+$secondary: $blue-sapphire;
+$success: $hunter-green;
+$info: $blue-bell;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info
+);
+
+
+// Required
+@import "node_modules/bootstrap/scss/bootstrap";

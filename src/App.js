@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import BlankPage from './BlankPage'
+import WelcomeScreen from './WelcomeScreen'
+import FramingScreen from './FramingScreen';
+import './scss/App.scss';
+import ElectionScreen from './ElectionScreen';
+import ExampleElectionScreen from './ExampleElectionScreen';
+import TournamentScreen from './TournamentScreen';
 
 function App() {
+  const pages = [
+    WelcomeScreen,
+    FramingScreen,
+    ElectionScreen,
+    ExampleElectionScreen,
+    TournamentScreen,
+    // FirstPastThePostScreen,
+    // CondorcetScreen,
+  ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {pages.map((Page, i) => (
+        <Page key={i} />
+      ))}
     </div>
   );
 }
