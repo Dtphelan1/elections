@@ -6,70 +6,54 @@ function TournamentScreen() {
     return (
         <PageSection className="text-left">
             <h1>Tournaments: Modelling Head-to-Head Outcomes</h1>
+
             <p>
-                Tournaments are a structure that comes from Graph Theory, and they represent all the outcomes of 1-on-1 matches between a bunch of competitors.
-                Graph Theory is the same area of math used to model social networks, GPS directions, and your favorite competitive sports brackets.
-                In order to understand tournaments, we need to first make sure we're fluent in what Graphs are.
-                A Graph, generally speaking, is just a bunch of entities and some relationships between them.
-                Each Node in a Graph represents an entity, and relationships are represented by Edges between Nodes.
+                As is often the case in math, we want to talk precisely about something we usually talk about informally.
+                'Tournaments', for example, are a structure that comes from Graph Theory, and they represent all the outcomes of 1-on-1 matches between a bunch of competitors.
+                While they share similarities with typical tournaments, they have a few formal properties that we are interested in.
+                But order to understand 'tournaments', we need to first make sure we're fluent in what a 'graph' is.
             </p>
 
-            <div className="row">
+            <p>
+                'Graphs' are tools for representing a bunch of entities and relationships between pairs of entities them.
+                Every 'graph' is made up of 'nodes' and 'edges'.
+                Each 'node' corresponds to an entity, and a relationship between two nodes is represented by an 'edge'.
+            </p>
+
+            <div className="row d-flex align-items-center">
                 <div className="col-md-7 col-12">
                     <p>
-                        In this case, our entities are presidential candidates, and the relationship we're interested in is "Who beats the other, 1-on-1?".
-                        To capture this relationship properly, we'll use a special kind of Edge called a "Directed Edge"
-                        Directed Edges have a 'tail', the place they come from, and a 'head', the place they're pointing.
+                        In the case of our graph, our entities are presidential candidates, and the relationship we're interested in is "Who beats the other, 1-on-1?".
+                        To capture this relationship properly, we'll use a special kind of Edge called a "directed edge"
+                        Directed edges have a 'tail' (the place they come from) and a 'head' (the place they're pointing).
+                        But what it means to be a 'tail' or a 'head' depends entirely on the model.
                     </p>
-                    <p>
-                        In our model, a directed edge from our Calista Node to our Bennie node means that, in a 1-on-1 election, Calista (the tail) would beat Bennie (the head).
-                        Based on our election outcomes, here's what our Graph looks like so far.
-                    </p>
-                </div>
-                <div className="col-md-5 col-12 d-flex flex-column align-items-center">
-                    <IncompleteTournament />
-                    <caption>Our Initial Graph</caption>
-                </div>
-            </div>
-            <h1>
-                TODO: In this section
-            </h1>
-            <p>
-                Discuss how this is an incomplete tournament.
-                Tournaments necessarily have outcomes between every pair of contestants.
-                Our Condorcet Criteria wants a candidate who beats everyone in 1-on-1 pairings.
-                Once we define the edge between our two candidates, we have a tournament.
-                But how do we structure our election so that we can determine that answer from the ballots??
-            </p>
-            <h1>
-                TODO: Remaining Section
-            </h1>
-            <ul>
-                <li>Introduce a non-FPTP Voting system; one of the condorcet methods likely</li>
-                <ul>
-                    <li>Demonstrate how this system guarantee the selection of a condorcet winner</li>
-                    <li>Return of the Tournaments - show that there isn't always a condorcet winner and that you can have a Condorcet paradox</li>
-                    <li>Possibly: Introduce Smith Sets, and Smith Efficent systems; talk about tradeoffs between ideal criteria and practical criteria; introduce IRV as a middleground better than FPTP</li>
-                </ul>
-            </ul>
-            <h1>
-                TODO: Concluding Section
-            </h1>
-            <p>
-                We've investigated the motivations behind elections and different ways of approaching voting theory.
-                We've gone over the FPTP system used in the American Presidential election.
-                We've demonstrated how FPTP systems can contribute to Tactical Voting, the Emergence of a Two Party System, and that FPTP does not guarantee the Condorcet Criterion.
-                We've shown how alternative voting systems can improve on some of these voting criteria.
-                The systems that undergird our electoral system have emergent effects on the outcomes we should expect from those systems.
-                The systems that exist now should not be taken for granted.
-                Check to see if there are any movements near you to propose alternative voting systems.
-                If you're in MA, research Ranked Choice/Instant Runoff voting and
-                Ranked Choice Voting is on the upcoming MA state ballot.
-                These systems are of our own design.
-                They should be questioned and we should use rigor and evidence to drive those inquiry.
-                And when that inquiry leads you to unsatisfying conclusions, ones that leave you wanting more, exercise our civic duties and demand more from our elected officials.
-            </p>
 
+                    <p>
+                        In our model, we'll interpret a 'head' node to be the loser in a 1-on-1 election, and a 'tail' node to be the winner.
+                        So a directed edge from Calista to Bennie means that, in a 1-on-1 election, Calista (the tail) would beat out Bennie (the head).
+                        Based on our election outcomes, here's what we might expect our Graph to look like.
+                    </p>
+
+                    <p>
+                        For a 'tournament' in the land of Graph Theory to be complete, it has to express <i>all</i> 1-on-1 outcomes.
+                        And this is where our current FPTP election structure falls short.
+                    </p>
+                </div>
+                <figure className="col-md-5 col-12 d-flex flex-column align-items-center">
+                    <IncompleteTournament />
+                    <figcaption className="text-center">Our Initial Graph<br />An Incomplete Tournament</figcaption>
+                </figure>
+            </div>
+
+            <p>
+                At present, we don't have a principled way of knowing which way Blue party voters would swing.
+                In fact, the outcomes we've modelled so far are based on incomplete information too.
+                What if, despite party loyalty, Bennie Blue's campaign resonated Rosie's core base enough for them to cross the line?
+                We need more information than our FPTP ballots provide.
+                To complete our 'tournament', we need another voting system all together.
+                Specifically, we need ballots that capture voter preferences.
+            </p>
         </PageSection>
     );
 }

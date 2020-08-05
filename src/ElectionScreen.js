@@ -22,6 +22,7 @@ function ElectionScreen() {
             <p className="pb-0 mb-0 font-weight-bold">
                 Elections Should...
             </p>
+
             <ul>
                 <li>Only use votes to determine the victor</li>
                 <li>Give everyone an equal voice</li>
@@ -33,6 +34,9 @@ function ElectionScreen() {
             <p>
                 These suggestions might not seem controversial at first glance, but take a closer look.
                 The American Presidential election fails to meet the first two criteria, in part due to the electoral college.
+            </p>
+
+            <p>
                 Delegates, not direct votes, determine the outcome of the presidential election.
                 The term "faithless elector" specifically designates delegates who vote for someone other than the candidate they're delegated for.
                 Additionally, the way delegates are apportioned to the states depends somewhat, but not entirely, on state population.
@@ -43,6 +47,7 @@ function ElectionScreen() {
             <p className="pb-0 mb-0 font-weight-bold">
                 Should Elections...
             </p>
+
             <ul>
                 <li>Only elect a candidate if they get a majority (≥ 50%) of the votes?</li>
                 <li>Take place over one or multiple rounds?</li>
@@ -55,6 +60,7 @@ function ElectionScreen() {
                 There are, however, plenty of criteria by which we can judge an election.
                 Like with all social constructs, it falls to us to decide what we value and how we judge a systems against those values.
             </p>
+
             <p>
                 But weighing abstract values in a vacuum can get disorienting fast.
                 To guide our analysis of what we want in a voting system, let's ground our discussion and our intuitions with an example.

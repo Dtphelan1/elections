@@ -6,7 +6,7 @@ body {
   font-family: 'Playfair Display', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $alabaster;
+  background-color: $background;
 }
 
 html { height: 100%; overflow:auto; }
@@ -19,9 +19,6 @@ body { height: 100%; }
 
 .page-content {
   height: 100%;
-  p {
-    margin-bottom: $spacer * 1.5;
-  }
   li {
     list-style-type: '- '
   }

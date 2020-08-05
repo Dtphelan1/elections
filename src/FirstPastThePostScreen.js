@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from './PageSection'
 
-function ExampleElectionScreen() {
+function FirstPastThePostScreen() {
     return (
         <PageSection className="text-left">
             <h1>First: A "First Past The Post" Example</h1>
@@ -21,6 +21,7 @@ function ExampleElectionScreen() {
             </p>
             <div>
                 <table className="table table-striped">
+                    <caption>Bennie Wins With 35% And That Feels Unfair</caption>
                     <thead className="thead-dark">
                         <tr>
                             <th>Candidate</th>
@@ -59,6 +60,8 @@ function ExampleElectionScreen() {
                 <p>
                     Another reason this seems unfair is that in a <i>head-to-head</i> election between Crimson Calista and Blue Bennie we can be confident that Calista would have one.
                     The same goes for Ruby Rosie.
+                </p>
+                <p>
                     What we're getting at is formally called <b>"The Condorcet Criterion"</b>; we want someone who would win in every head-to-head election.
                     To model these head-to-head elections, we'll use something called a Tournament.
                 </p>
@@ -67,4 +70,4 @@ function ExampleElectionScreen() {
     );
 }
 
-export default ExampleElectionScreen
+export default FirstPastThePostScreen

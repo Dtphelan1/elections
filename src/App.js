@@ -4,18 +4,19 @@ import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import './scss/App.scss';
 import ElectionScreen from './ElectionScreen';
-import ExampleElectionScreen from './ExampleElectionScreen';
+import FirstPastThePostScreen from './FirstPastThePostScreen';
 import TournamentScreen from './TournamentScreen';
+import InstantRunoffVotingScreen from './InstantRunoffVotingScreen';
 
 function App() {
   const pages = [
     WelcomeScreen,
     FramingScreen,
     ElectionScreen,
-    ExampleElectionScreen,
+    FirstPastThePostScreen,
     TournamentScreen,
-    // FirstPastThePostScreen,
-    // CondorcetScreen,
+    InstantRunoffVotingScreen,
+    BlankPage,
   ];
 
   useEffect(() => {

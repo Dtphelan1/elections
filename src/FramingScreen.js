@@ -5,7 +5,7 @@ function FramingScreen() {
     return (
         <PageSection className="text-left">
             <h1>Why Talk About Elections?</h1>
-            <div className="row d-flex mb-4">
+            <div className="row d-flex mb-3">
                 <div className="col-sm-12 col-md-6">
                     <p>
                         2020 is a major election year in the US, when we decide who will lead our country for the next 1460 days.
