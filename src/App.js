@@ -6,7 +6,7 @@ import './scss/App.scss';
 import ElectionScreen from './ElectionScreen';
 import FirstPastThePostScreen from './FirstPastThePostScreen';
 import TournamentScreen from './TournamentScreen';
-import InstantRunoffVotingScreen from './InstantRunoffVotingScreen';
+import PreferentialVotingScreen from './PreferentialVotingScreen';
 
 function App() {
   const pages = [
@@ -15,7 +15,7 @@ function App() {
     ElectionScreen,
     FirstPastThePostScreen,
     TournamentScreen,
-    InstantRunoffVotingScreen,
+    PreferentialVotingScreen,
     BlankPage,
   ];
 

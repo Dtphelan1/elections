@@ -18,7 +18,7 @@ function FramingScreen() {
                     </p>
                     <p className="mb-md-0">
                         Many Americans are looking for answers.
-                        Certainty.
+                        Certainty.<sup>1</sup>
                     </p>
                 </div>
                 <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">

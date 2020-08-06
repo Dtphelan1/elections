@@ -13,12 +13,15 @@ html { height: 100%; overflow:auto; }
 body { height: 100%; }
 
 // Shared styles across components:
-.page-section {
-  // min-height: 50vh;
-}
-
 .page-content {
   height: 100%;
+  figcaption {
+    color: $gray-600;
+    text-align: center;
+  }
+  sup {
+    cursor: pointer;
+  }
   li {
     list-style-type: '- '
   }

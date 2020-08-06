@@ -9,10 +9,8 @@ function BlankPage() {
                 TODO: Remaining Sections
             </h1>
             <ul>
-                <li>Finish the section on preferential ballots, linking back to tournaments and showing how the tournament will find us the head-to-head winner if there is one</li>
-                <li>Introduce issues with paradoxes and the fact that there isn't always a winner in this space</li>
                 <li>Broach the topic of Smith sets, Smith Effienceny, and discuss the trad</li>
-                <li>Possibly: Introduce Smith Sets, and Smith Efficent systems; talk about tradeoffs between ideal criteria and practical criteria; introduce IRV as a middleground better than FPTP</li>
+                <li>Also broach concerns that go beyond pure mathematics; feasbility of running the election without errors; feasibility of getting people to believe in the system; time it takes to tabulate results.</li>
             </ul>
             <h1>
                 TODO: Concluding Section

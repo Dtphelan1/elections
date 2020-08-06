@@ -56,13 +56,13 @@ function ElectionScreen() {
 
             <p>
                 And so our simple question has a simple, albeit unsatisfying, answer:
-                <i>There is no one ideal election</i>.
-                There are, however, plenty of criteria by which we can judge an election.
-                Like with all social constructs, it falls to us to decide what we value and how we judge a systems against those values.
+                <b> There is no one ideal election</b>.
             </p>
 
             <p>
-                But weighing abstract values in a vacuum can get disorienting fast.
+                There are, however, plenty of criteria by which we can judge an election.
+                Like with all social constructs, it falls to us to decide what we value and how we judge a systems against those values.
+                That said, weighing abstract values in a vacuum can get disorienting fast.
                 To guide our analysis of what we want in a voting system, let's ground our discussion and our intuitions with an example.
             </p>
         </PageSection>

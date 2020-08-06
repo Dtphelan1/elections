@@ -21,7 +21,7 @@ function TournamentScreen() {
             </p>
 
             <div className="row d-flex align-items-center">
-                <div className="col-md-7 col-12">
+                <div className="col-md-7">
                     <p>
                         In the case of our graph, our entities are presidential candidates, and the relationship we're interested in is "Who beats the other, 1-on-1?".
                         To capture this relationship properly, we'll use a special kind of Edge called a "directed edge"
@@ -40,7 +40,7 @@ function TournamentScreen() {
                         And this is where our current FPTP election structure falls short.
                     </p>
                 </div>
-                <figure className="col-md-5 col-12 d-flex flex-column align-items-center">
+                <figure className="col-md-5 d-flex flex-column align-items-center">
                     <IncompleteTournament />
                     <figcaption className="text-center">Our Initial Graph<br />An Incomplete Tournament</figcaption>
                 </figure>
