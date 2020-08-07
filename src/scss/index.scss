@@ -7,10 +7,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background;
+  margin-bottom: $footer-height * 1.2; /* Margin bottom by footer height */
 }
 
-html { height: 100%; overflow:auto; }
-body { height: 100%; }
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 // Shared styles across components:
 .page-content {

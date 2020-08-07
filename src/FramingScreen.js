@@ -28,7 +28,7 @@ function FramingScreen() {
 
             <p>
                 It is in pursuit of that certainty, we will turn our attention to the mathematics of democratic elections.
-                Specifically, we'll explore what kind of voting system the American presidential system uses, what kind of information our system misses out on, common pitfalls that are inherent in the structure of our voting system, and how alternative approaches can help avoid them.
+                Specifically, we'll explore what kind of voting system the American presidential system uses, what kind of information that system misses, common pitfalls inherent in the structure of that voting system, and how alternative approaches can avoid them.
                 By the end of this exploration, hopefully readers have learned a little more about how elections work today, how they should work, the chasm between those two ideas, and how we can start to cross that chasm.
 
             </p>

@@ -4,9 +4,10 @@
     .page-content {
         padding-top: 8vh;
     }
-    #welcome-text {
+    #welcome-text-jumbo {
         color: $white;
         background-color: transparentize($color: $primary, $amount: 0.2);
+        margin: -2rem;
         h1 {
             margin-bottom: $spacer;
         }

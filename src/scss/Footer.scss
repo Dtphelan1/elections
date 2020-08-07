@@ -1,0 +1,11 @@
+@import './variables';
+
+#footer {
+    text-transform: lowercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    line-height: $footer-height;
+    font-size: .8rem;
+}

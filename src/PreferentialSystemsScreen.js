@@ -12,6 +12,7 @@ function PreferentialSystemsScreen() {
                 Using these values, each candidate receives a score corresponding their victories minus their defeats.
                 The candidate with the highest score wins.
                 While Copeland's method satisfies both the Condorcet and Smith criteria, it often produce a tie when there are three-way Smith cycles.
+                This poses a practical concerns for this technique.
             </p>
             <p>
                 <b>"Kemeny–Young's method"</b> is another Condorcet method, one that assigns scores to each possible sequence of preferences that voters could provide.
@@ -19,50 +20,44 @@ function PreferentialSystemsScreen() {
                 The most-preferred candidate in that sequence is then chosen as the overall winner.
                 This method, in addition to being less intuitive than previous approaches, is algorithmically NP-hard.
                 It's unlikely that there is a polynomial-time algorithm to find a victor for an arbitrary election with 'n' candidates.
-             </p>
+            </p>
+            <p>
+                We've only scratched the surface of different Condorcet methods, as the research diving into every one is significant.
+                Beyond these, there are some preferential voting systems that don't even satisfy the Condorcet criterion.
+                Arguably one of the most popular preferential systems, <b>"Instant Runoff Voting"/"Ranked Choice Voting"</b>, fails in this regard.
+                But what it lacks in that regard, it gains in intuitive simplicity.
+                The algorithm is as follows:
+            </p>
+            <ol>
+                <li>If there is a majority candidate, select them.</li>
+                <li>Else, remove the candidate in last place and reallocate each ballot to their next-in-line preference.</li>
+                <li>Repeat 1-2 until a candidate is selected.</li>
+            </ol>
             <div className="row d-flex align-items-center">
-                <div className="col-md-6 d-flex justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center">
                     <p>
-                        The number of Condorcet methods is remarkable, as is the research that accompanies every one.
-                        Beyond these, there are some preferential voting systems that don't even satisfy the Condorcet criterion.
-                        Arguably one of the most popular preferential systems, <b>"Instant Runoff Voting"/"Ranked Choice Voting"</b>, fails in this regard.
-                        But what it lacks in that regard, it gains in intuitive simplicity.
-                        The algorithm is as follows:
-                        <ol>
-                            <li>If there is a majority candidate, select them.</li>
-                            <li>Else, remove the candidate in last place and reallocate each ballot to their next-in-line preference.</li>
-                            <li>Repeat 1-2 until a candidate is selected.</li>
-                        </ol>
                         The concern with IRV, however, is that the elimination of an outlier can result in a temporary boost of a suboptimal candidate.
-                        This can result in the overall front-runner being edged into last place for long enough that they're removed from the race.
-                        Below is an example where, after the arrival of Sapphire Sally and a shifting of the political landscape, Calista loses to Rosie, who she could have beaten 1-on-1 thanks to Bennie's.
+                        This lead to the overall front-runner being knocked into last place for long enough that they're removed from the race.
+                        That's how IRV can fail the Condorcet criterion.
+                        Here is an example where, after the arrival of Sapphire Sally and a shifting of the political landscape, Calista loses to Rosie, who she could have beaten 1-on-1 thanks to Bennie's.
                         This permutation on the spoiler effect is not just mathematically possible, but much like the Singapore example from earlier has happened in recent history, specifically in Burlington, Vermont's 2009 mayoral election.
                     </p>
                 </div>
-                <div className="col-md-6">
-                    <table className="table table-striped">
-                        <caption>IRV Election Where Calista, Our Condorcet Winner, Loses</caption>
+                <div className="col-lg-8">
+                    <table className="table table-striped table-responsive-lg">
+                        <caption>Sally Shifts The IRV Election; Calista, Our Condorcet Winner, Loses</caption>
                         <thead className="thead-dark">
                             <tr>
                                 <th>Candidates</th>
                                 <th>Original Tally</th>
                                 <th>1st Change</th>
-                                <th>Post Elimination</th>
+                                <th>New Tally</th>
                                 <th>2nd Change</th>
-                                <th>Post Elimination</th>
+                                <th>New Tally</th>
                                 <th>Winner</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Calista</th>
-                                <td>31</td>
-                                <td>0</td>
-                                <td className="font-weight-bold">31</td>
-                                <td>-31</td>
-                                <td>0</td>
-                                <td></td>
-                            </tr>
                             <tr>
                                 <th scope="row">Rosie</th>
                                 <td>24</td>
@@ -82,6 +77,15 @@ function PreferentialSystemsScreen() {
                                 <td></td>
                             </tr>
                             <tr>
+                                <th scope="row">Calista</th>
+                                <td>31</td>
+                                <td>0</td>
+                                <td className="font-weight-bold">31</td>
+                                <td>-31</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <th scope="row">Sally</th>
                                 <td className="font-weight-bold">15</td>
                                 <td>-15</td>
@@ -95,11 +99,12 @@ function PreferentialSystemsScreen() {
                 </div>
             </div>
             <p>
-                But let's back up a second - why are we even discussing methods if they don't meet our Condorcet criteria?
+                But let's back up a second - why are we even discussing methods that don't meet our Condorcet criteria?
                 As we recognized when we began this exploration, it's critical that our analysis of voting systems be grounded in certainty.
-                The precision and analysis of mathematic investigation permits objective, nonpartisan discussions about different voting algorithms, their pros, and their cons.
-                While this is undeniable, there's another important factor we need to consider in choosing a voting systems:
-                practicality.
+                Precise analysis permits objective, nonpartisan discussions about different voting algorithms, their pros, and their cons.
+            </p>
+            <p>
+                But that analysis doesn't tell us which tradeoffs to make.
             </p>
         </PageSection>
     );

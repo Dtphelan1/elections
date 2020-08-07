@@ -9,12 +9,12 @@ function WelcomeScreen() {
         <div id="welcome-page" className="page-section" style={{ background: `url(${process.env.PUBLIC_URL}/img/voting-day.jpg)`, backgroundSize: 'cover', position: "relative", minHeight: "90vh" }}>
             <div className="page-content container">
                 <Fade>
-                    <div id="welcome-text" className="jumbotron">
-                        <h1>Democratic Elections and Voting Theory</h1>
+                    <div id="welcome-text-jumbo" className="jumbotron">
+                        <h1>Democratic Elections In Examplandia</h1>
                         <h2>
-                            How Voting Systems Fail
+                            Seeing How Voting Systems Can Fail
                             <br />
-                            And How We Can Improve Them
+                            And How We Can Fix Them
                         </h2>
                     </div>
                 </Fade>

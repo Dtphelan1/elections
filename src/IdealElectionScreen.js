@@ -63,7 +63,7 @@ function IdealElectionScreen() {
             <p>
                 There are, however, plenty of criteria by which we can judge an election.
                 Like with all social constructs, it falls on us to decide what we value and how to build systems that manifest those values.
-                That said, weighing abstract concepts in a vacuum can get disorienting fast.
+                That said, weighing abstract ideas in a conceptual vacuum can get disorienting fast.
                 To guide our analysis of what we want in a voting system, let's ground our discussion and our intuitions with an example.
                 Let's turn to Examplandia, a nation whose presidential elections look similar to those of the US.
             </p>

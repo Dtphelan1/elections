@@ -9,9 +9,9 @@ function PreferentialVotingScreen() {
             <div className="row d-flex align-items-md-center">
                 <div className="col-md-6">
                     <p>
-                        Ranked voting is precisely what it sounds like: a system that lets voters rank candidates in terms of preference.
+                        Ranked Voting is precisely what it sounds like: a system that lets voters rank candidates in terms of preference.
                         This additional information is then used to narrow down candidates in the event that none capture a unanimous majority.
-                        In addition to helping us with building tournaments and finding
+                        In addition to helping us with building tournaments, ranked ballots can alleviate the Spoiler Effect and Tactical Voting trends we observed eariler.
                     </p>
 
                     <p>
@@ -37,7 +37,7 @@ function PreferentialVotingScreen() {
                 </div>
                 <div className="col-md-6">
                     <table className="table table-striped">
-                        <caption>The Results of our Ranked Election</caption>
+                        <caption>The Results of Examplandia's Ranked Election</caption>
                         <thead className="thead-dark">
                             <tr>
                                 <th>Ordering</th>

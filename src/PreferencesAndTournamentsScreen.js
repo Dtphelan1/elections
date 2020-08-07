@@ -95,12 +95,10 @@ function PreferencesAndTournamentsScreen() {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-md-6 d-flex justify-content-center">
-                    <figure>
-                        <ParadoxicalTournament />
-                        <figcaption>The Resulting Tournament Has <br /> No Condorcet Winner</figcaption>
-                    </figure>
-                </div>
+                <figure className="col-md-6 d-flex flex-column align-items-center">
+                    <ParadoxicalTournament />
+                    <figcaption>Bennie's New Strategy Results In <br /> A Tournament With No Condorcet Winner</figcaption>
+                </figure>
             </div>
             <p>
                 The Condorcet Paradox has two important, if obvious, implications.
