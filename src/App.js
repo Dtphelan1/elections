@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import BlankPage from './BlankPage'
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import IdealElectionScreen from './IdealElectionScreen';
@@ -22,7 +21,6 @@ function App() {
     PreferencesAndTournamentsScreen,
     PreferentialSystemsScreen,
     NextStepsScreen,
-    BlankPage,
   ];
 
   useEffect(() => {

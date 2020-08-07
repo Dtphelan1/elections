@@ -38,7 +38,7 @@ function NextStepsScreen() {
                 understandability by the public, cost in implementing, auditability, and others.
                 Taking the practical dimension further, there are organizations active all over the US working to educate the public on different voting systems.
                 Local ballot initiatives constantly arise as grassroots organizers band together to demand more of their voting systems.
-                This year (2020) in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/"></a>"Yes on 2" campaign has recently succeeded in securing a spot on the November ballot.
+                This year (2020) in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/">"Yes on 2"</a> campaign has recently succeeded in securing a spot on the November ballot.
                 In only a few months, MA residents will decide if the state will use the IRV system in state elections moving forward.
             </p>
             <p>
