@@ -6,10 +6,10 @@ import './scss/WelcomeScreen.scss';
 
 function WelcomeScreen() {
     return (
-        <div className="page-section" style={{ background: `url(${process.env.PUBLIC_URL}/img/voting-day.jpg)`, backgroundSize: 'cover', position: "relative", minHeight: "90vh" }}>
-            <div className="page-content pt-5 pb-5 container">
+        <div id="welcome-page" className="page-section" style={{ background: `url(${process.env.PUBLIC_URL}/img/voting-day.jpg)`, backgroundSize: 'cover', position: "relative", minHeight: "90vh" }}>
+            <div className="page-content container">
                 <Fade>
-                    <div id="welcome-screen" className="jumbotron">
+                    <div id="welcome-text" className="jumbotron">
                         <h1>Democratic Elections and Voting Theory</h1>
                         <h2>
                             How Voting Systems Fail

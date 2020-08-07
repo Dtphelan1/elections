@@ -1,12 +1,17 @@
 @import './variables';
 
-#welcome-screen {
-    color: $white;
-    background-color: transparentize($color: $primary, $amount: 0.2);
-    h1 {
-        margin-bottom: $spacer;
+#welcome-page  {
+    .page-content {
+        padding-top: 8vh;
     }
-    h2 {
-        font-size: 1.75rem;
+    #welcome-text {
+        color: $white;
+        background-color: transparentize($color: $primary, $amount: 0.2);
+        h1 {
+            margin-bottom: $spacer;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
     }
 }

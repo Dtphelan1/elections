@@ -8,14 +8,15 @@ function TournamentScreen() {
             <h1>Tournaments: Modelling Head-to-Head Outcomes</h1>
 
             <p>
-                As is often the case in math, we want to talk precisely about something we usually talk about informally.
-                'Tournaments', for example, are a structure that comes from Graph Theory, and they represent all the outcomes of 1-on-1 matches between a bunch of competitors.
-                While they share similarities with typical tournaments, they have a few formal properties that we are interested in.
-                But order to understand 'tournaments', we need to first make sure we're fluent in what a 'graph' is.
+                As is often the case in math, we want to talk precisely about something we usually discuss informally.
+                'Tournament' here, for example, is a formal term that comes from Graph Theory, representing all the outcomes of 1-on-1 matches between a some set of competitors.
+                Finding the <b>Condorcet winner</b> of a tournament is simple - just find the competitor that beats everyone they face.
+                While they share similarities with colloquial tournaments, there are some formal properties that we are interested in.
+                And to understand 'tournaments', we need to first be fluent in 'graphs'.
             </p>
 
             <p>
-                'Graphs' are tools for representing a bunch of entities and relationships between pairs of entities them.
+                'Graphs' are tools for modelling some set of entities and relationships between pairs of them.
                 Every 'graph' is made up of 'nodes' and 'edges'.
                 Each 'node' corresponds to an entity, and a relationship between two nodes is represented by an 'edge'.
             </p>
@@ -23,21 +24,23 @@ function TournamentScreen() {
             <div className="row d-flex align-items-center">
                 <div className="col-md-7">
                     <p>
-                        In the case of our graph, our entities are presidential candidates, and the relationship we're interested in is "Who beats the other, 1-on-1?".
-                        To capture this relationship properly, we'll use a special kind of Edge called a "directed edge"
+                        In the case of our graph, we are modelling 1-on-1 election outcomes.
+                        Our entities are presidential candidates, and the relationship we're interested in is "Who beats the other, 1-on-1?".
+                        To capture this relationship, we'll use a special kind of edge called a 'directed edge'.
                         Directed edges have a 'tail' (the place they come from) and a 'head' (the place they're pointing).
-                        But what it means to be a 'tail' or a 'head' depends entirely on the model.
+                        But what being a 'tail' or a 'head' means is dependent on the model's interpretation.
                     </p>
 
                     <p>
-                        In our model, we'll interpret a 'head' node to be the loser in a 1-on-1 election, and a 'tail' node to be the winner.
-                        So a directed edge from Calista to Bennie means that, in a 1-on-1 election, Calista (the tail) would beat out Bennie (the head).
-                        Based on our election outcomes, here's what we might expect our Graph to look like.
+                        In our model we'll say a 'head' node is the loser of the 1-on-1 election, and a 'tail' node is the winner.
+                        That means a directed edge from <span className="text-primary">Calista</span> to <span className="text-secondary">Bennie</span> means that, in a 1-on-1 election, <span className="text-primary">Calista</span> (the tail) would beat out <span className="text-secondary">Bennie</span> (the head).
+                        Based on our election outcomes above and the model we've constructed, here's what our graph might look like.
                     </p>
 
                     <p>
-                        For a 'tournament' in the land of Graph Theory to be complete, it has to express <i>all</i> 1-on-1 outcomes.
-                        And this is where our current FPTP election structure falls short.
+                        One last thing about 'tournaments'.
+                        They have to express <i>all</i> 1-on-1 outcomes.
+                        And this criteria here is where FPTP elections as a system truly fall short.
                     </p>
                 </div>
                 <figure className="col-md-5 d-flex flex-column align-items-center">
@@ -47,14 +50,18 @@ function TournamentScreen() {
             </div>
 
             <p>
-                At present, we don't have a principled way of knowing which way Blue party voters would swing.
-                In fact, the outcomes we've modelled so far are based on incomplete information too.
-                What if, despite party loyalty, Bennie Blue's campaign resonated Rosie's core base enough for them to cross the line?
-                We need more information than our FPTP ballots provide.
-                To complete our 'tournament', we need another voting system all together.
-                Specifically, we need ballots that capture voter preferences.
-            </p>
-        </PageSection>
+                At present, we cannot know which way Blue party voters would swing.
+                In fact, the outcomes we've modelled so far are just guesses based on incomplete information.
+                What if, despite party lines,
+                    <span className="text-primary"> Rosie</span> voters resonated so much with
+                    <span className="text-secondary"> Bennie Blue's</span> campaign so much that they would betray their party allegiance to vote
+                    <span className="text-secondary"> Bennie</span> against
+                    <span className="text-primary"> Calista</span>?
+                To build our tournament, we need more information than our FPTP ballots provide.
+                We need to change our voting system all together.
+                Specifically, we need to know voter preferences.
+            </p >
+        </PageSection >
     );
 }
 

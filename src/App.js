@@ -3,19 +3,25 @@ import BlankPage from './BlankPage'
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import './scss/App.scss';
-import ElectionScreen from './ElectionScreen';
+import IdealElectionScreen from './IdealElectionScreen';
 import FirstPastThePostScreen from './FirstPastThePostScreen';
 import TournamentScreen from './TournamentScreen';
 import PreferentialVotingScreen from './PreferentialVotingScreen';
+import PreferencesAndTournamentsScreen from './PreferencesAndTournamentsScreen';
+import PreferentialSystemsScreen from './PreferentialSystemsScreen';
+import NextStepsScreen from './NextStepsScreen';
 
 function App() {
   const pages = [
     WelcomeScreen,
     FramingScreen,
-    ElectionScreen,
+    IdealElectionScreen,
     FirstPastThePostScreen,
     TournamentScreen,
     PreferentialVotingScreen,
+    PreferencesAndTournamentsScreen,
+    PreferentialSystemsScreen,
+    NextStepsScreen,
     BlankPage,
   ];
 

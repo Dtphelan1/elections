@@ -18,7 +18,7 @@ function FramingScreen() {
                     </p>
                     <p className="mb-md-0">
                         Many Americans are looking for answers.
-                        Certainty.<sup>1</sup>
+                        Certainty.
                     </p>
                 </div>
                 <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
@@ -27,8 +27,9 @@ function FramingScreen() {
             </div>
 
             <p>
-                It is in pursuit of that certainty, we will turn our attention to the history and mathematics of democratic elections.
-                We'll use that knowledge to investigate how elections should work, how the American voting system works, the chasm between those two ideas and how we can hope to cross it.
+                It is in pursuit of that certainty, we will turn our attention to the mathematics of democratic elections.
+                Specifically, we'll explore what kind of voting system the American presidential system uses, what kind of information our system misses out on, common pitfalls that are inherent in the structure of our voting system, and how alternative approaches can help avoid them.
+                By the end of this exploration, hopefully readers have learned a little more about how elections work today, how they should work, the chasm between those two ideas, and how we can start to cross that chasm.
 
             </p>
 
