@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/electionsandtournaments/static/css/main.80df833f.chunk.css",
-    "main.js": "/electionsandtournaments/static/js/main.48c418bf.chunk.js",
-    "main.js.map": "/electionsandtournaments/static/js/main.48c418bf.chunk.js.map",
+    "main.js": "/electionsandtournaments/static/js/main.b5bdb9ac.chunk.js",
+    "main.js.map": "/electionsandtournaments/static/js/main.b5bdb9ac.chunk.js.map",
     "runtime-main.js": "/electionsandtournaments/static/js/runtime-main.537a2279.js",
     "runtime-main.js.map": "/electionsandtournaments/static/js/runtime-main.537a2279.js.map",
-    "static/js/2.c0732cd9.chunk.js": "/electionsandtournaments/static/js/2.c0732cd9.chunk.js",
-    "static/js/2.c0732cd9.chunk.js.map": "/electionsandtournaments/static/js/2.c0732cd9.chunk.js.map",
+    "static/js/2.8f30c804.chunk.js": "/electionsandtournaments/static/js/2.8f30c804.chunk.js",
+    "static/js/2.8f30c804.chunk.js.map": "/electionsandtournaments/static/js/2.8f30c804.chunk.js.map",
     "index.html": "/electionsandtournaments/index.html",
-    "precache-manifest.bc21fc07282535db27f68afe4212417e.js": "/electionsandtournaments/precache-manifest.bc21fc07282535db27f68afe4212417e.js",
+    "precache-manifest.ea632e976c4ead562692841e80ef1f07.js": "/electionsandtournaments/precache-manifest.ea632e976c4ead562692841e80ef1f07.js",
     "service-worker.js": "/electionsandtournaments/service-worker.js",
     "static/css/main.80df833f.chunk.css.map": "/electionsandtournaments/static/css/main.80df833f.chunk.css.map",
-    "static/js/2.c0732cd9.chunk.js.LICENSE.txt": "/electionsandtournaments/static/js/2.c0732cd9.chunk.js.LICENSE.txt",
+    "static/js/2.8f30c804.chunk.js.LICENSE.txt": "/electionsandtournaments/static/js/2.8f30c804.chunk.js.LICENSE.txt",
     "static/media/complete-tournament.879eec74.svg": "/electionsandtournaments/static/media/complete-tournament.879eec74.svg",
     "static/media/incomplete-tournament.93604def.svg": "/electionsandtournaments/static/media/incomplete-tournament.93604def.svg",
     "static/media/paradoxical-tournament.46328a49.svg": "/electionsandtournaments/static/media/paradoxical-tournament.46328a49.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.537a2279.js",
-    "static/js/2.c0732cd9.chunk.js",
+    "static/js/2.8f30c804.chunk.js",
     "static/css/main.80df833f.chunk.css",
-    "static/js/main.48c418bf.chunk.js"
+    "static/js/main.b5bdb9ac.chunk.js"
   ]
 }
