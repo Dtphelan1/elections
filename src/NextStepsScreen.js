@@ -9,45 +9,51 @@ function NextStepsScreen() {
             <p>
                 We've discussed briefly the motivations behind democratic elections, and how those motivations are often at odds with political realities.
                 Swiftly, we stepped away the muck and mire of real world constraints to discuss abstract properties of voting systems.
-                In particular, we highlighted two approaches to ballot structure - <b>First Past The Post systems, and Ranked Voting systems</b>.
+                In particular, we investigated two approaches to ballot structure - <b>First Past The Post systems, and Ranked Voting systems</b>.
             </p>
             <p>
-                By looking to Examplandia, we examined some of the ways these ballot structures can impact election results.
-                In doing so, we developed a vocabulary for describing how those outcome were unsatisfying:
+                By looking to FPTP in Examplandia, we examined some of the ways these ballot structures can impact election results, developing a vocabulary for the unsatisfying outcomes we saw:
                 The <b>Spoiler Effect</b> disadvantages candidates when similar ones run along side them, especially in FPTP systems.
-                <b>Tactical Voting</b> makes it hard for novel candidates to gain a foothold, emerges when
-                And the fact that our winning candidate didn't beat any competitors one on one demonstrates a grave failure to meet the <b>Condorcet criteria</b>.
+                <b> Tactical Voting</b> is the practice of voting for electable candidates, not preferred candidate, and makes it hard for new candidates to gain a foothold.
+                And the fact that our winning candidate didn't beat any competitors 1-on-1 demonstrates a failure to satisfy the <b>Condorcet Criterion</b>.
             </p>
             <p>
-                We've seen how Ranked Voting systems can alleviate these negative effects and, in some cases, guarantee that the Condorcet criteria.
-                Through `tournaments`, we visualized and analyzed how candidates fare against one another based on candidate rankings.
-                And when unanimous winner's cannot be found due to the <b>Condorcet paradox</b>, we introduced briefly the concept of the <b>Smith set</b> and Smith efficiency.
-                But those systems also carry with them tradeoffs of their own.
-                In looking towards Examplandia, we've learned much about shortcomings of the FPTP system, possible alternative systems, and some tradeoffs associated with each.
+                We've seen how Ranked Voting can alleviate these negative effects and, in some cases, guarantee the Condorcet Criterion is satisfied.
+                Tournaments allowed us to visualize and analyze how candidates fare against one another based on voter preferences.
+                When unanimous winner's cannot be found due to the <b>Condorcet Paradox</b>, we briefly discussed how the related concept of <b>Smith Efficiency</b> can be used as an extension of the Condorcet Criterion.
+                And with each Ranked Voting method we discussed – <b>Copeland's, Kemeny–Young's, and Instant Runoff Voting</b> – we touched on both pros and cons.
+                Overall, in looking towards Examplandia, we've discussed many shortcomings of the FPTP system, possible alternative systems, and the tradeoffs associated with each.
             </p>
             <p>
-                We've only scratched the surface
+                This only scratches the surface.
             </p>
             <p>
-                There are numerous other Condorcet and Smith Efficient, Ranked Voting systems that we haven't had the time to explore here.
-                Notably, the <b>"Shulze"</b> method meets both these criteria and has become the defacto standard for digital coalitions.
-                As far as criteria go, there are dozens of additional properties one can consider in implementing a voting system.
-                Traditional analysis has centered on mathematic criteria, which one can provably demonstrate hold for a given system.
-                <b>Experimental criteria</b>, on the other hand, use simulations to compare how different voting systems operate in practical cases.
-                And in addition to these empirical qualities of elections, there are <b>"soft" criteria</b> to consider with respect to this being a policy:
-                understandability by the public, cost in implementing, auditability, and others.
+                There are numerous other Condorcet and Smith Efficient Ranked Voting systems that we haven't had the time to explore here.
+                Notably, the <b>"Shulze"</b> method meets both these criteria and has become the defacto voting standard for many digital coalitions.
+                As far as criteria go, there are dozens of additional properties one can consider when evaluating a voting system.
+                Traditionally, analysis has centered on <b>Mathematic Criteria</b>, which one can approach from the rigorous perspective of proofs.
+                <b>Experimental Criteria</b>, on the other hand, use simulations to compare how different voting systems operate in practical cases.
+                And in addition to these empirical qualities of voting systems, there are <b>Soft Criteria</b> to consider with respect to a voting system being, at it's core, a political institution:
+                How understandable is the system to the public?
+                How much does the system cost to operate?
+                How easy is the system to audit?
+            </p>
+            <p>
                 Taking the practical dimension further, there are organizations active all over the US working to educate the public on different voting systems.
-                Local ballot initiatives constantly arise as grassroots organizers band together to demand more of their voting systems.
-                This year (2020) in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/">"Yes on 2"</a> campaign has recently succeeded in securing a spot on the November ballot.
-                In only a few months, MA residents will decide if the state will use the IRV system in state elections moving forward.
+                New collections and local ballot initiatives are emerging nationwide, as grassroots organizers band together to demand more of their voting systems.
+                Here in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/">"Yes on 2"</a> campaign has recently succeeded in securing a spot on the November ballot.
+                In only a few months, MA residents will decide whether the state will use the Instant Runoff Voting system in future state elections.
             </p>
             <p>
-                Ultimately, voting systems are simply systems of our own making.
-                Their critical importance in upholding democracy demands that we pay them due attention.
-                Their efficacy in reflecting the voice of the people is something we should use rigor and evidence to drive those inquiry.
-                And when that inquiry produces unsatisfying conclusions, it's our duty to exercise our civic liberties and demand more from the systems we've built.
-                Continue learning more about voting systems, the mathematics that underpin them, and see how you improve the voting systems you participate in at the local, state and even federal level.
-                Vote.
+                Ultimately, voting systems are systems of our own making -<i>"By the people, for the people"</i>.
+                Their critical importance in undergirding our democratic process demands of us due attention;
+                their efficacy in reflecting the will of the people cannot be taken for granted.
+                Investigation of that efficacy needs to be rigorous and evidence-driven.
+                And if that inquiry yields unsatisfying conclusions, it's our duty to exercise our civic liberties by building and voting for better systems.
+                Continue learning more about voting systems, the mathematics that underpin them, and try to see how you can play a role in improving the voting systems around you.
+            </p>
+            <p>
+                And please. Vote.
             </p>
         </PageSection>
     );

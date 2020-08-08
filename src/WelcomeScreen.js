@@ -12,16 +12,14 @@ function WelcomeScreen() {
                     <div id="welcome-text-jumbo" className="jumbotron">
                         <h1>Democratic Elections In Examplandia</h1>
                         <h2>
-                            Seeing How Voting Systems Can Fail
+                            How Voting Systems Can Fail
                             <br />
                             And How We Can Fix Them
                         </h2>
                     </div>
                 </Fade>
                 <Citation>
-                    <span>
-                        Photo by Element5 Digital from Pexels
-                    </span>
+                    Photo by Element5 Digital from Pexels
                 </Citation>
             </div>
         </div>

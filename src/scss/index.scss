@@ -15,6 +15,10 @@ html {
   min-height: 100%;
 }
 
+a {
+  color: $hunter-green;
+}
+
 // Shared styles across components:
 .page-content {
   height: 100%;
@@ -28,4 +32,10 @@ html {
   ul li {
     list-style-type: '- '
   }
+  a {
+    color: $hunter-green;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
 }

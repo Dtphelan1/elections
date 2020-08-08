@@ -4,9 +4,9 @@ import FramingScreen from './FramingScreen';
 import IdealElectionScreen from './IdealElectionScreen';
 import FirstPastThePostScreen from './FirstPastThePostScreen';
 import TournamentScreen from './TournamentScreen';
-import PreferentialVotingScreen from './PreferentialVotingScreen';
-import PreferencesAndTournamentsScreen from './PreferencesAndTournamentsScreen';
-import PreferentialSystemsScreen from './PreferentialSystemsScreen';
+import RankedVotingScreen from './RankedVotingScreen';
+import RankingsAndTournamentsScreen from './RankingsAndTournamentsScreen';
+import RankedSystemsScreen from './RankedSystemsScreen';
 import NextStepsScreen from './NextStepsScreen';
 import Footer from './Footer';
 
@@ -17,9 +17,9 @@ function App() {
     IdealElectionScreen,
     FirstPastThePostScreen,
     TournamentScreen,
-    PreferentialVotingScreen,
-    PreferencesAndTournamentsScreen,
-    PreferentialSystemsScreen,
+    RankedVotingScreen,
+    RankingsAndTournamentsScreen,
+    RankedSystemsScreen,
     NextStepsScreen,
   ];
 

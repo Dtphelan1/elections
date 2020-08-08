@@ -1,43 +1,43 @@
 import React from 'react';
 import PageSection from './PageSection';
 
-function PreferentialVotingScreen() {
+function RankedVotingScreen() {
     return (
         <PageSection className="text-left">
             <h1>Ranked Voting: Moving Beyond One Choice</h1>
 
+            <p>
+                Ranked Voting is precisely what it sounds like: a voting system that lets voters rank candidates in terms of preference.
+                This additional information is then used to narrow down candidates in the event that none capture a unanimous majority.
+                In addition to helping us with building tournaments, ranked ballots can help alleviate the Spoiler Effect and Tactical Voting trend we observed earlier.
+            </p>
             <div className="row d-flex align-items-md-center">
                 <div className="col-md-6">
                     <p>
-                        Ranked Voting is precisely what it sounds like: a system that lets voters rank candidates in terms of preference.
-                        This additional information is then used to narrow down candidates in the event that none capture a unanimous majority.
-                        In addition to helping us with building tournaments, ranked ballots can alleviate the Spoiler Effect and Tactical Voting trends we observed eariler.
+                        In the context of building our 'tournament', these preferences determine who would win in 1-on-1 elections, providing the information we need to direct our edges.
+                        Let's return to Examplandia to see how a Ranked Voting ballot could be used.
                     </p>
 
                     <p>
-                        In the context of building our 'tournament', these preferences are how we determine who would win in 1-on-1 elections and finish drawing our edges.
-                        Let's return to Examplandia to see how these kinds of ballots could be used.
-                    </p>
-
-                    <p>
-                        It's four years later, and the same three candidates - <span className="text-primary">Crimson Calista,</span> <span className="text-primary"> Ruby Rosie, </span> and <span className="text-secondary"> Blue Bennie </span> - are in the running for president again.
-                        This time, however, the Red Party's legislators rallied to pass some a more representative voting system.
-                        Since there are three candidates, there are six unique orderings the candidates can take on.
-                        Here are the results for each of those orderings.
+                        It's four years later, and the same three candidates - <span className="text-primary">Crimson Calista,</span> <span className="text-primary"> Ruby Rosie, </span> and <span className="text-secondary"> Blue Bennie </span> - are in the running again for president.
+                        This time, however, the <span className="text-primary">Red Party's</span> legislators rallied to pass a Ranked Voting system.
+                        With three candidates, there are six unique ranking that voters could express.
+                        This means that every vote will match one of these orderings.
+                        Provided are the results of this year's election.
                     </p>
 
                     <p>
                         With this additional information, we can say definitively who would win in each 1-on-1 election.
                         Consider <span className="text-primary">Calista</span> v. <span className="text-primary">Rosie</span>.
                         For each row in the table above, <span className="text-primary">Calista</span> gets the corresponding votes if C comes before R.
-                        Similarly, Rosie gets that row's votes if R comes before C.
-                        Finally, we can compare the total votes each candidate received across all preference combinations.
+                        Similarly, <span className="text-primary">Rosie</span> gets that row's votes if R comes before C.
+                        We can compare the total votes each candidate received across all preference combinations to determine our 1-on-1.
                         In the table below, we do this for all 1-on-1's matchups.
                     </p>
                 </div>
                 <div className="col-md-6">
                     <table className="table table-striped">
-                        <caption>The Results of Examplandia's Ranked Election</caption>
+                        <caption>The Results of Examplandia's Election Using Ranked Voting </caption>
                         <thead className="thead-dark">
                             <tr>
                                 <th>Ordering</th>
@@ -144,4 +144,4 @@ function PreferentialVotingScreen() {
     );
 }
 
-export default PreferentialVotingScreen;
+export default RankedVotingScreen;
