@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background;
-  margin-bottom: $footer-height * 1.2; /* Margin bottom by footer height */
+  margin-bottom: $footer-height; /* Margin bottom by footer height, plus some */
 }
 
 html {

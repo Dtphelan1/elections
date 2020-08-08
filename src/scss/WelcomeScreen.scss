@@ -4,15 +4,21 @@
     .page-content {
         padding-top: 8vh;
     }
+}
+#welcome-text-jumbo {
+    color: $white;
+    background-color: transparentize($color: $primary, $amount: 0.2);
+    margin: -2rem;
+    h1 {
+        margin-bottom: $spacer;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 576px) {
     #welcome-text-jumbo {
-        color: $white;
-        background-color: transparentize($color: $primary, $amount: 0.2);
-        margin: -2rem;
-        h1 {
-            margin-bottom: $spacer;
-        }
-        h2 {
-            font-size: 1.75rem;
-        }
+        margin: 0rem;
+        margin-left: -1rem;
     }
 }

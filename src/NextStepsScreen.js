@@ -29,7 +29,7 @@ function NextStepsScreen() {
             </p>
             <p>
                 There are numerous other Condorcet and Smith Efficient Ranked Voting systems that we haven't had the time to explore here.
-                Notably, the <b>"Shulze"</b> method meets both these criteria and has become the defacto voting standard for many digital coalitions.
+                Notably, the <b>"Schulze"</b> method meets both these criteria and has become the defacto voting standard for many digital coalitions.
                 As far as criteria go, there are dozens of additional properties one can consider when evaluating a voting system.
                 Traditionally, analysis has centered on <b>Mathematic Criteria</b>, which one can approach from the rigorous perspective of proofs.
                 <b>Experimental Criteria</b>, on the other hand, use simulations to compare how different voting systems operate in practical cases.
