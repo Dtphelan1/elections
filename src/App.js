@@ -13,10 +13,7 @@ import Footer from './Footer';
 
 // Google Analytics Setup
 const gaTag = "UA-174946812-1"
-ReactGA.initialize(gaTag);
-if (window.location.hostname !== "localhost") {
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
+
 
 function App() {
   const pages = [
@@ -32,7 +29,11 @@ function App() {
   ];
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+    ReactGA.initialize(gaTag);
+    if (window.location.hostname !== "localhost") {
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
   }, [])
 
   return (
