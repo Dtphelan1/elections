@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/electionsandtournaments/static/css/main.80df833f.chunk.css",
-    "main.js": "/electionsandtournaments/static/js/main.5b2427cd.chunk.js",
-    "main.js.map": "/electionsandtournaments/static/js/main.5b2427cd.chunk.js.map",
+    "main.js": "/electionsandtournaments/static/js/main.d060a6b5.chunk.js",
+    "main.js.map": "/electionsandtournaments/static/js/main.d060a6b5.chunk.js.map",
     "runtime-main.js": "/electionsandtournaments/static/js/runtime-main.537a2279.js",
     "runtime-main.js.map": "/electionsandtournaments/static/js/runtime-main.537a2279.js.map",
     "static/js/2.8f30c804.chunk.js": "/electionsandtournaments/static/js/2.8f30c804.chunk.js",
     "static/js/2.8f30c804.chunk.js.map": "/electionsandtournaments/static/js/2.8f30c804.chunk.js.map",
     "index.html": "/electionsandtournaments/index.html",
-    "precache-manifest.2304c317b88bd3e9a5cdb160264e1f61.js": "/electionsandtournaments/precache-manifest.2304c317b88bd3e9a5cdb160264e1f61.js",
+    "precache-manifest.49ac970c2ea89b81068085473bfb34a0.js": "/electionsandtournaments/precache-manifest.49ac970c2ea89b81068085473bfb34a0.js",
     "service-worker.js": "/electionsandtournaments/service-worker.js",
     "static/css/main.80df833f.chunk.css.map": "/electionsandtournaments/static/css/main.80df833f.chunk.css.map",
     "static/js/2.8f30c804.chunk.js.LICENSE.txt": "/electionsandtournaments/static/js/2.8f30c804.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.537a2279.js",
     "static/js/2.8f30c804.chunk.js",
     "static/css/main.80df833f.chunk.css",
-    "static/js/main.5b2427cd.chunk.js"
+    "static/js/main.d060a6b5.chunk.js"
   ]
 }
