@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import IdealElectionScreen from './IdealElectionScreen';
@@ -9,6 +10,13 @@ import RankingsAndTournamentsScreen from './RankingsAndTournamentsScreen';
 import RankedSystemsScreen from './RankedSystemsScreen';
 import NextStepsScreen from './NextStepsScreen';
 import Footer from './Footer';
+
+// Google Analytics Setup
+const gaTag = "UA-174946812-1"
+ReactGA.initialize(gaTag);
+if (window.location.hostname !== "localhost") {
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 function App() {
   const pages = [
