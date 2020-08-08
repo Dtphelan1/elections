@@ -15,7 +15,7 @@ function RankingsAndTournamentsScreen() {
                         With the preferences above, we can finally complete our 'tournament'.
                         In addition to the open question regarding <span className="text-primary">Calista</span> and <span className="text-primary">Rosie</span>, our ballots provide definitive information about how <span className="text-secondary">Bennie</span> fares against each <span className="text-primary">Red</span> party candidate.
                         This information lets us move beyond speculation and back into the realm of certainty.
-                        <span className="text-primary">Calista</span>, based on these preferences, would have beaten any candidate 1-on-1.
+                        <span className="text-primary"> Calista</span>, based on these preferences, would have beaten any candidate 1-on-1.
                         This makes her our Condorcet Winner, a strong reason for her to win the election.
                         And while the result may be worse for <span className="text-primary">Bennie</span>, the result better captures the people's preferences.
                     </p>
@@ -33,16 +33,16 @@ function RankingsAndTournamentsScreen() {
             </div>
             <p>
                 'Tournaments' can be <b>'k-paradoxical'</b>, where 'k' is some integer number.
-                In a 1-paradoxical tournament, every contestant in the tournament loses some other contestant.
+                In a 1-paradoxical tournament, every contestant in the tournament loses to some other contestant.
                 In a 2-paradoxical tournament, every set of two contestants has some other contestant they both lose to.
                 K-paradoxical tournaments are those in which, for every set of k-contestants, there is some other contestant that beats every member of the set.
                 In the case of a 1-paradoxical tournament, there is no Condorcet Winner.
-                While the term '1-paradoxical' is common in Graph Theory contexts, the term for this phenomenon is a voting theory context is the <b>Condorcet Paradox</b>
+                While the term '1-paradoxical' is common in Graph Theory contexts, the term for this phenomenon is a voting theory context is the <b>Condorcet Paradox</b>.
             </p>
             <p>
                 How could a paradox like this play out in Examplandia?
                 Think back to the scenario we discussed earlier, where <span className="text-secondary">Bennie</span> beats <span className="text-primary">Calista</span>.
-                If <span className="text-secondary">Bennie</span> began shifting her platform to be more like <span className="text-primary">Rosie's</span>, she might be able to persuade enough of <span className="text-primary">Rosie's</span> voters to rank B above C.
+                If <span className="text-secondary">Bennie</span> began shifting viousher platform to be more like <span className="text-primary">Rosie's</span>, she might be able to persuade enough of <span className="text-primary">Rosie's</span> voters to rank B above C.
                 If enough votes shifted from preference 'R > C > B' to 'R > B > C', <span className="text-secondary">Bennie</span> could actually beat <span className="text-primary">Calista</span> 1-on-1.
             </p>
             <div className="row d-flex align-items-center">
@@ -104,20 +104,21 @@ function RankingsAndTournamentsScreen() {
                 The Condorcet Paradox has two important, if obvious, implications.
             </p>
             <p>
-                One: It's too restrictive to say that elections <i>must</i> select a Condorcet Winner, because sometimes there is none.
+                1: It's too restrictive to say that elections <i>must</i> select a Condorcet Winner, because sometimes there is none.
                 We want elections that will select such a winner <i>if one exists</i>.
                 There's a property related to the Condorcet Winner in a graph, called the <b>Smith Set</b>.
                 The Smith Set is composed of the candidates that all beat one another, and is always well defined for a tournament.
-                When there's a Condorcet Winner, the Smith Set only has member;
+                When there's a Condorcet Winner, the Smith Set only has one member;
                 in the paradoxical tournament above, the Smith Set contains all our candidates.
                 And in examples where some candidates only get small fractions of the vote, they would likely be excluded from the Smith Set.
                 Voting systems that always select members of the Smith Set are <b>Smith Efficient</b>.
                 But we cannot expect voting systems to find a Condorcet winner if there is none.
             </p>
             <p>
-                Two: Just looking for a Condorcet Winner is not enough.
-                A voting system needs a more in-depth strategy than just a) build a tournament and b) find someone who always wins those 1-on-1 matchups, since as we've pointed point sometimes there Condorcet Winner.
-                While there are different approaches to using these preferences to select candidate, they each have different tradeoffs.
+                2: Just looking for a Condorcet Winner is not enough.
+                A voting system needs a more in-depth strategy than just a) build a tournament and b) find a candidate who always wins those 1-on-1 matchups.
+                As we've discovered, sometimes there is no Condorcet Winner.
+                There are many different approaches to using these rankings to select a candidate, each with different tradeoffs.
             </p>
         </PageSection>
     );

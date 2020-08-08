@@ -32,7 +32,7 @@ function NextStepsScreen() {
                 Notably, the <b>"Schulze"</b> method meets both these criteria and has become the defacto voting standard for many digital coalitions.
                 As far as criteria go, there are dozens of additional properties one can consider when evaluating a voting system.
                 Traditionally, analysis has centered on <b>Mathematic Criteria</b>, which one can approach from the rigorous perspective of proofs.
-                <b>Experimental Criteria</b>, on the other hand, use simulations to compare how different voting systems operate in practical cases.
+                <b> Experimental Criteria</b>, on the other hand, use simulations to compare how different voting systems operate in practical cases.
                 And in addition to these empirical qualities of voting systems, there are <b>Soft Criteria</b> to consider with respect to a voting system being, at it's core, a political institution:
                 How understandable is the system to the public?
                 How much does the system cost to operate?

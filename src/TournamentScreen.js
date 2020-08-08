@@ -10,7 +10,7 @@ function TournamentScreen() {
             <p>
                 As is often the case in modelling and mathematics, we want to talk precisely about a term we use colloquially.
                 The word 'tournament' here is being used as a formal term, one that comes from Graph Theory.
-                It is a graphical representation of every 1-on-1 matches between a set of competitors.
+                It is a graphical representation of all 1-on-1 matches between our set of competitors.
                 Finding the Condorcet Winner is simple if you have a 'tournament' - just find the competitor that beats everyone they face.
                 While they share similarities with colloquial tournaments, there are some formal properties that we are interested in.
                 And to understand 'tournaments', we need to first be fluent in 'graphs'.
@@ -41,7 +41,7 @@ function TournamentScreen() {
                     <p>
                         One last thing about tournaments.
                         They have to express <i>all</i> 1-on-1 outcomes.
-                        This criteria here is where the shortcoming of First Past The Post elections become apparent.
+                        This criterion here is where the shortcoming of First Past The Post elections become apparent.
                     </p>
                 </div>
                 <figure className="col-md-5 d-flex flex-column align-items-center">
@@ -54,10 +54,10 @@ function TournamentScreen() {
                 With the table above, we have no way of knowing how <span className="text-secondary">Blue</span> voters would swing.
                 In fact, the outcomes we have modelled so far are just guesses based on incomplete information.
                 It is possible that, despite party lines,
-                    <span className="text-primary"> Ruby Rosie</span> voters resonated so much with
-                    <span className="text-secondary"> Blue Bennie's</span> campaign so much that they would betray party allegiance and vote
+                    <span className="text-primary"> Ruby Rosie</span> voters resonate with
+                    <span className="text-secondary"> Blue Bennie's</span> campaign enough that would vote
                     <span className="text-secondary"> Bennie</span> instead of
-                    <span className="text-primary"> Crimson Calista</span>?
+                    <span className="text-primary"> Crimson Calista</span>.
                 <b> To build our tournament, we need more information than our FPTP ballots provide. </b>
                 We need to a different balloting system all together.
                 Specifically, we need one that tells us voter preferences.

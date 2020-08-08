@@ -9,9 +9,9 @@ function RankedSystemsScreen() {
             <p>
                 There are an entire class of preferential voting systems - Condorcet Methods - that satisfy the Condorcet Criterion.
                 <b> "Copeland's method"</b>, for example, calculates the pairwise victories and pairwise defeats for each candidate.
-                Using these values, each candidate receives a score corresponding their victories minus their defeats;
+                Using these values, each candidate receives a score corresponding to their victories minus their defeats;
                 the candidate with the highest score wins.
-                While Copeland's method satisfies both the Condorcet Criterion and is Smith Efficient, it often produce a tie when there are three-way Smith cycles.
+                While Copeland's method satisfies both the Condorcet Criterion and is Smith Efficient, it often produces a tie when there are three-way Smith cycles.
                 This poses a practical concern for this technique.
             </p>
 

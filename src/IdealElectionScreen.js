@@ -69,7 +69,7 @@ function IdealElectionScreen() {
                 Like with all social constructs, it falls on us to decide what we value and how to build systems that manifest those values.
                 That said, weighing abstract ideas in a conceptual vacuum can get disorienting fast.
                 To guide our analysis of what we want in a voting system, let's ground our discussion and intuitions with a simple example.
-                Ignoring the complications that the Electoral College presents, we will turn to Examplandia, a nation whose presidential election looks is similar in structure to the US'.
+                Ignoring the complications that the Electoral College presents, we will turn to Examplandia, a nation whose presidential election is similar in structure to the US'.
             </p>
         </PageSection>
     );

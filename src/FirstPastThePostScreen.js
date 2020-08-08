@@ -50,7 +50,7 @@ function FirstPastThePostScreen() {
                 </table>
                 <p>
                     If the problem above seems contrived, consider the Singapore presidential election of 2011:
-                    Only 35.20% of voter actually voted for the winning candidate.
+                    Only 35.20% of voters actually voted for the winning candidate.
                     The details of that election differ in a few important ways, but this real-world result illustrates that candidates can and do win FPTP elections with roughly one third of the vote.
                     So while Election Day was one of celebration for <span className="text-secondary">Bennie</span>, most citizens felt robbed.
                     Many people, perhaps even you, look at these results and say "This isn't fair. Something wrong has happened, the system has failed."
@@ -73,7 +73,7 @@ function FirstPastThePostScreen() {
                     Another reason, closely related, is that these results encourage people to vote for who they think will win, not who they actually prefer.
                     This phenomenon, called <b>"Tactical Voting",</b> contributes to the stability of two party systems, where "safe" voting can be hard to shake.
                     If after seeing these results we asked Examplandians how they had wished they had voted, some <span className="text-primary">Rosie</span> voters might regret not casting their ballot for <span className="text-primary">Calista</span>, the Red frontrunner.
-                    Even if one candidate doesn't providing exactly what a person wants, a disdain for alternative parties and ideologies can be reason enough to compromise on a preferred candidate and for a more likely one.
+                    Even if one candidate doesn't provide exactly what a person wants, a disdain for alternative parties and ideologies can be reason enough to compromise on a preferred candidate and for a more likely one.
                     This mindset can prevent new parties or non-standard platforms from gaining traction after two parties establish themselves.
                 </p>
                 <p>
