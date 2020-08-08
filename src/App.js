@@ -14,7 +14,6 @@ import Footer from './Footer';
 // Google Analytics Setup
 const gaTag = "UA-174946812-1"
 
-
 function App() {
   const pages = [
     WelcomeScreen,
