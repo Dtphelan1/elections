@@ -11,11 +11,30 @@ const FramingScreen = React.forwardRef((props, ref) => {
                 <div className="col-sm-12 col-md-6">
                     <p>
                         2020 is a major election year in the US.
-                        In November, the country will deicide who will be our President for the next 1460 days.<FootnoteGenerator desc="ayooayooayooayooayooayooayooayooayooayooayooayooayoo ayooayooayooayooayooayooayooayooayooayoo" ref={ref} />
-                        As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.<FootnoteGenerator desc="ayoo" ref={ref} />
+                        In November, the country will deicide who will be our President for the next 1460 days.
+                        As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.
+                            <FootnoteGenerator
+                                desc="Based on articles from the NIH."
+                                link="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7158585/"
+                                ref={ref} setFootnote={props.setFootnote}
+                            />
                         We are still navigating the fallout of record breaking unemployment numbers.
+                            <FootnoteGenerator
+                                desc="These catastrophic numbers have been widely reported, but NYT's visualizations are jawdropping."
+                                link="https://www.nytimes.com/interactive/2020/05/08/business/economy/april-jobs-report.html"
+                                ref={ref} setFootnote={props.setFootnote}
+                            />
                         Nationwide protests, calling for accountability in law enforcement, have been answered by the deployment of armed, federal forces.
-                        One thousand lives are lost daily to the virus.
+                            <FootnoteGenerator
+                                desc="As of writing federal troops had been deployed in Portland Oregon, with deployments other cities being considered by administration officials."
+                                link="https://www.france24.com/en/20200729-troops-to-deploy-in-three-more-us-cities-as-federal-forces-begin-portland-withdrawal"
+                                ref={ref} setFootnote={props.setFootnote}
+                            />
+                        One thousand American lives are lost daily to the virus.
+                            <FootnoteGenerator
+                                desc="The numbers fluctuate, but as of writing (Aug 8, 2020) this was the reality."
+                                link="https://www.theguardian.com/world/2020/jul/26/us-coronavirus-deaths-1000-day-republicans-trump-golf-relief-bill"
+                                ref={ref} setFootnote={props.setFootnote} />
                         Chaos abounds.
                         Leadership and hope, for many, feel scarce.
                     </p>
@@ -25,7 +44,7 @@ const FramingScreen = React.forwardRef((props, ref) => {
                     </p>
                 </div>
                 <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <div>
+                    <div className="position-relative">
                         <img src={`${process.env.PUBLIC_URL}/img/black-voting-box.jpg`} alt="" style={{ objectFit: "cover", height: "100%", maxHeight: "215px" }} />
                         <Citation>
                             Photo by Element5 Digital from Pexels

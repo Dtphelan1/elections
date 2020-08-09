@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from './PageSection'
 
-function FirstPastThePostScreen() {
+const FirstPastThePostScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>First: A "First Past The Post" Example</h1>
@@ -86,6 +86,6 @@ function FirstPastThePostScreen() {
             </div>
         </PageSection>
     );
-}
+});
 
 export default FirstPastThePostScreen

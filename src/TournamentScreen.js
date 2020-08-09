@@ -2,7 +2,7 @@ import React from 'react';
 import PageSection from './PageSection';
 import { ReactComponent as IncompleteTournament } from './tournaments/incomplete-tournament.svg';
 
-function TournamentScreen() {
+const TournamentScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>Tournaments: Modelling 1-on-1 Outcomes</h1>
@@ -62,6 +62,6 @@ function TournamentScreen() {
             </p >
         </PageSection >
     );
-}
+});
 
 export default TournamentScreen

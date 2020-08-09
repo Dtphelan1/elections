@@ -3,7 +3,7 @@ import PageSection from './PageSection';
 import { ReactComponent as CompleteTournament } from './tournaments/complete-tournament.svg';
 import { ReactComponent as ParadoxicalTournament } from './tournaments/paradoxical-tournament.svg';
 
-function RankingsAndTournamentsScreen() {
+const RankingsAndTournamentsScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>Complete Preferences, Complete Tournaments, <br className="d-md-none d-sm-none d-lg-inline" /> Incomplete Answers</h1>
@@ -122,6 +122,6 @@ function RankingsAndTournamentsScreen() {
             </p>
         </PageSection>
     );
-}
+});
 
 export default RankingsAndTournamentsScreen;

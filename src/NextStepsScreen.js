@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from './PageSection';
 
-function NextStepsScreen() {
+const NextStepsScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>Beyond Examplandia: Deeper Theory and Practical Applications</h1>
@@ -40,13 +40,13 @@ function NextStepsScreen() {
             </p>
             <p>
                 Taking the practical dimension further, there are organizations active all over the US working to educate the public on different voting systems.
-                New collections and local ballot initiatives are emerging nationwide, as grassroots organizers band together to demand more of their voting systems.
+                Collectives and local ballot initiatives have emerged nationwide as grassroots organizers band together to demand more of their voting systems.
                 Here in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/">"Yes on 2"</a> campaign has recently succeeded in securing a spot on the November ballot.
                 In only a few months, MA residents will decide whether the state will use the Instant Runoff Voting system in future state elections.
             </p>
             <p>
                 Ultimately, voting systems are systems of our own making -<i>"By the people, for the people"</i>.
-                Their critical importance in undergirding our democratic process demands of us due attention;
+                Undergirding our democratic process, their importance is critical and demands of us due attention;
                 their efficacy in reflecting the will of the people cannot be taken for granted.
                 Investigation of that efficacy needs to be rigorous and evidence-driven.
                 And if that inquiry yields unsatisfying conclusions, it's our duty to exercise our civic liberties by building and voting for better systems.
@@ -57,6 +57,6 @@ function NextStepsScreen() {
             </p>
         </PageSection>
     );
-}
+});
 
 export default NextStepsScreen;

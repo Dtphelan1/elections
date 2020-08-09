@@ -39,14 +39,16 @@ a {
   }
 }
 
-.footnote-text {
+.footnote-container {
+  font-size: .8rem;
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  background: darken($color: $linen, $amount: 0.8);
+  background: darken($color: $linen, $amount: 1.8);
   padding: $spacer 0;
   width: 100vw;
-  // Transition
+  word-break: break-word;
+  // Transition variables - will change on open and close
   opacity: 0;
   visibility: hidden;
   transition: opacity .5s ease, visibility .5s ease;

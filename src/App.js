@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useRef, useEffect, useState } from 'react';
+import ReactGA, { set } from 'react-ga';
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import IdealElectionScreen from './IdealElectionScreen';
@@ -20,33 +20,42 @@ function App() {
     WelcomeScreen,
     FramingScreen,
     IdealElectionScreen,
-    // FirstPastThePostScreen,
-    // TournamentScreen,
-    // RankedVotingScreen,
-    // RankingsAndTournamentsScreen,
-    // RankedSystemsScreen,
-    // NextStepsScreen,
+    FirstPastThePostScreen,
+    TournamentScreen,
+    RankedVotingScreen,
+    RankingsAndTournamentsScreen,
+    RankedSystemsScreen,
+    NextStepsScreen,
   ];
 
   /*
    * Code for changing footnotes
    */
   // Ref for changing the footnote component
-  const ref = useRef(null);
-
+  const footnoteRef = useRef(null);
+  const [footnoteNum, setFootnoteNum] = useState(null)
+  const [footnoteLink, setFootnoteLink] = useState(null)
+  const [footnoteDesc, setFootnoteDesc] = useState(null)
+  function setFootnote(num, link, desc) {
+    setFootnoteNum(num)
+    setFootnoteLink(link)
+    setFootnoteDesc(desc)
+  }
+  // Function for closing the footnote on clicks outside the div proper
   const closeFootnote = (event) => {
-    if (ref.current && !ref.current.contains(event.target)) {
-      ref.current.style.opacity = 0;
-      ref.current.style.visibility = "hidden";
+    if (footnoteRef.current && !footnoteRef.current.contains(event.target)) {
+      footnoteRef.current.style.opacity = 0;
+      footnoteRef.current.style.visibility = "hidden";
     }
   }
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // GA functionality
     ReactGA.initialize(gaTag);
     if (window.location.hostname !== "localhost") {
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
+    // Needed for footnote management
     document.addEventListener('click', closeFootnote, true);
     return () => {
       document.removeEventListener('click', closeFootnote, true);
@@ -57,9 +66,14 @@ function App() {
     <>
       <div className="App">
         {pages.map((Page, i) => (
-          <Page key={i} ref={ref} />
+          <Page key={i} ref={footnoteRef} setFootnote={setFootnote}/>
         ))}
-        <Footnote ref={ref} />
+        <Footnote
+          ref={footnoteRef}
+          footnoteNum={footnoteNum}
+          footnoteLink={footnoteLink}
+          footnoteDesc={footnoteDesc}
+        />
         <Footer />
       </div>
     </>

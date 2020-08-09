@@ -4,7 +4,7 @@ import Citation from './Citation';
 
 import './scss/WelcomeScreen.scss';
 
-function WelcomeScreen() {
+const WelcomeScreen = React.forwardRef((props, ref) => {
     return (
         <div id="welcome-page" className="page-section" style={{ background: `url(${process.env.PUBLIC_URL}/img/voting-day.jpg)`, backgroundSize: 'cover', position: "relative", minHeight: "90vh" }}>
             <div className="page-content container">
@@ -24,6 +24,6 @@ function WelcomeScreen() {
             </div>
         </div>
     );
-}
+});
 
 export default WelcomeScreen;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from './PageSection';
 
-function RankedVotingScreen() {
+const RankedVotingScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>Ranked Voting: Moving Beyond One Choice</h1>
@@ -142,6 +142,6 @@ function RankedVotingScreen() {
             </table>
         </PageSection>
     );
-}
+});
 
 export default RankedVotingScreen;
