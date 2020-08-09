@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from './PageSection'
 
-function IdealElectionScreen() {
+const IdealElectionScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>The Ideal(?) Democratic Election</h1>
@@ -42,9 +42,9 @@ function IdealElectionScreen() {
 
             <p>
                 Electors, not direct votes, determine the outcome of the presidential election.
-                The term "faithless elector" specifically designates Electors who vote for someone other than the candidate they're delegated for.
+                The term "Faithless Elector" specifically designates Electors who decide not to vote for the candidate selected by the people.
                 Additionally, the way Electors are apportioned to the states depends only somewhat, not entirely, on state population;
-                each state gets 2  by default.
+                each state gets 2 by default.
                 The result is that in certain states, votes can "weigh" more than other votes in terms of how much they contribute to each member of the overall Electoral College.
                 Things only get more contentious from here.
             </p>
@@ -68,11 +68,11 @@ function IdealElectionScreen() {
                 There are, however, plenty of criteria by which we can judge an election.
                 Like with all social constructs, it falls on us to decide what we value and how to build systems that manifest those values.
                 That said, weighing abstract ideas in a conceptual vacuum can get disorienting fast.
-                To guide our analysis of what we want in a voting system, let's ground our discussion and intuitions with a simple example.
-                Ignoring the complications that the Electoral College presents, we will turn to Examplandia, a nation whose presidential election is similar in structure to the US'.
+                Instead, we will ground our discussion of what we want from elections with an example.
+                Ignoring the complications that the Electoral College presents, we will turn to Examplandia, a nation whose presidential election is similar to that of the US.
             </p>
         </PageSection>
     );
-}
+});
 
 export default IdealElectionScreen

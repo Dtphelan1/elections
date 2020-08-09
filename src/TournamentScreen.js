@@ -10,14 +10,14 @@ function TournamentScreen() {
             <p>
                 As is often the case in modelling and mathematics, we want to talk precisely about a term we use colloquially.
                 The word 'tournament' here is being used as a formal term, one that comes from Graph Theory.
-                It is a graphical representation of all 1-on-1 matches between our set of competitors.
+                Tournaments are graphical representations of all 1-on-1 matches between a set of competitors.
                 Finding the Condorcet Winner is simple if you have a 'tournament' - just find the competitor that beats everyone they face.
                 While they share similarities with colloquial tournaments, there are some formal properties that we are interested in.
                 And to understand 'tournaments', we need to first be fluent in 'graphs'.
             </p>
 
             <p>
-                'Graphs' are tools for modelling some set of entities and relationships between pairs of them.
+                Graphs are tools for modelling some set of entities and relationships between pairs of them.
                 Every 'graph' is made up of 'nodes' and 'edges'.
                 Each 'node' corresponds to an entity, and a relationship between two nodes is represented by an 'edge'.
             </p>
@@ -37,28 +37,26 @@ function TournamentScreen() {
                         That means a directed edge from <span className="text-primary">Calista</span> to <span className="text-secondary">Bennie</span> means that, in a 1-on-1 election, <span className="text-primary">Calista</span> (the tail) would beat out <span className="text-secondary">Bennie</span> (the head).
                         Based on our election outcomes above and the model we've constructed, here's what our graph might look like.
                     </p>
-
-                    <p>
-                        One last thing about tournaments.
-                        They have to express <i>all</i> 1-on-1 outcomes.
-                        This criterion here is where the shortcoming of First Past The Post elections become apparent.
-                    </p>
                 </div>
                 <figure className="col-md-5 d-flex flex-column align-items-center">
                     <IncompleteTournament />
                     <figcaption className="text-center">Our Initial Graph<br />An Incomplete Tournament</figcaption>
                 </figure>
             </div>
-
             <p>
-                With the table above, we have no way of knowing how <span className="text-secondary">Blue</span> voters would swing.
-                In fact, the outcomes we have modelled so far are just guesses based on incomplete information.
+                One last thing about tournaments.
+                They have to express <i>all</i> 1-on-1 outcomes.
+                This last requirement illustrates a critical shortcoming of First Past The Post elections.
+            </p>
+            <p>
+                With the election results tabulated above, we have no way of knowing how <span className="text-secondary">Blue</span> voters would swing.
+                Even the outcomes we have modelled so far are just guesses based on incomplete information.
                 It is possible that, despite party lines,
                     <span className="text-primary"> Ruby Rosie</span> voters resonate with
                     <span className="text-secondary"> Blue Bennie's</span> campaign enough that would vote
                     <span className="text-secondary"> Bennie</span> instead of
                     <span className="text-primary"> Crimson Calista</span>.
-                <b> To build our tournament, we need more information than our FPTP ballots provide. </b>
+                <b> To construct a tournament, we need more information than what FPTP ballots provide. </b>
                 We need to a different balloting system all together.
                 Specifically, we need one that tells us voter preferences.
             </p >

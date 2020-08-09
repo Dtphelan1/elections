@@ -22,8 +22,8 @@ function RankedVotingScreen() {
                         It's four years later, and the same three candidates - <span className="text-primary">Crimson Calista,</span> <span className="text-primary"> Ruby Rosie, </span> and <span className="text-secondary"> Blue Bennie </span> - are in the running again for president.
                         This time, however, the <span className="text-primary">Red Party's</span> legislators rallied to pass a Ranked Voting system.
                         With three candidates, there are six unique ranking that voters could express.
-                        This means that every vote will match one of these orderings.
                         Provided are the results of this year's election.
+                        Note that every vote will match one of the possible candidate rankings orderings.
                     </p>
 
                     <p>

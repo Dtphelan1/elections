@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import ReactGA from 'react-ga';
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
@@ -9,6 +9,7 @@ import RankedVotingScreen from './RankedVotingScreen';
 import RankingsAndTournamentsScreen from './RankingsAndTournamentsScreen';
 import RankedSystemsScreen from './RankedSystemsScreen';
 import NextStepsScreen from './NextStepsScreen';
+import { Footnote } from './FootnoteGenerator';
 import Footer from './Footer';
 
 // Google Analytics Setup
@@ -19,13 +20,26 @@ function App() {
     WelcomeScreen,
     FramingScreen,
     IdealElectionScreen,
-    FirstPastThePostScreen,
-    TournamentScreen,
-    RankedVotingScreen,
-    RankingsAndTournamentsScreen,
-    RankedSystemsScreen,
-    NextStepsScreen,
+    // FirstPastThePostScreen,
+    // TournamentScreen,
+    // RankedVotingScreen,
+    // RankingsAndTournamentsScreen,
+    // RankedSystemsScreen,
+    // NextStepsScreen,
   ];
+
+  /*
+   * Code for changing footnotes
+   */
+  // Ref for changing the footnote component
+  const ref = useRef(null);
+
+  const closeFootnote = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      ref.current.style.opacity = 0;
+      ref.current.style.visibility = "hidden";
+    }
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,14 +47,19 @@ function App() {
     if (window.location.hostname !== "localhost") {
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
-  }, [])
+    document.addEventListener('click', closeFootnote, true);
+    return () => {
+      document.removeEventListener('click', closeFootnote, true);
+    };
+  }, []);
 
   return (
     <>
       <div className="App">
         {pages.map((Page, i) => (
-          <Page key={i} />
+          <Page key={i} ref={ref} />
         ))}
+        <Footnote ref={ref} />
         <Footer />
       </div>
     </>

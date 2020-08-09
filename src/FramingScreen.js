@@ -1,8 +1,8 @@
 import React from 'react';
 import PageSection from './PageSection'
 import Citation from './Citation';
-
-function FramingScreen() {
+import { FootnoteGenerator } from './FootnoteGenerator.js'
+const FramingScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
             <h1>Why Talk About Elections?</h1>
@@ -11,8 +11,8 @@ function FramingScreen() {
                 <div className="col-sm-12 col-md-6">
                     <p>
                         2020 is a major election year in the US.
-                        In November, the country will deicide who will be our President for the next 1460 days.
-                        As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.
+                        In November, the country will deicide who will be our President for the next 1460 days.<FootnoteGenerator desc="ayooayooayooayooayooayooayooayooayooayooayooayooayoo ayooayooayooayooayooayooayooayooayooayoo" ref={ref} />
+                        As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.<FootnoteGenerator desc="ayoo" ref={ref} />
                         We are still navigating the fallout of record breaking unemployment numbers.
                         Nationwide protests, calling for accountability in law enforcement, have been answered by the deployment of armed, federal forces.
                         One thousand lives are lost daily to the virus.
@@ -41,6 +41,6 @@ function FramingScreen() {
             </p>
         </PageSection>
     );
-}
+});
 
-export default FramingScreen
+export default FramingScreen;
