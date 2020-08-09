@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import ReactGA, { set } from 'react-ga';
+import ReactGA from 'react-ga';
 import WelcomeScreen from './WelcomeScreen'
 import FramingScreen from './FramingScreen';
 import IdealElectionScreen from './IdealElectionScreen';
