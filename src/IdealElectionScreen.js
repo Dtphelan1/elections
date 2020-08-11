@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSection from './PageSection'
+import {FootnoteGenerator} from './FootnoteGenerator'
 
 const IdealElectionScreen = React.forwardRef((props, ref) => {
     return (
@@ -8,8 +9,23 @@ const IdealElectionScreen = React.forwardRef((props, ref) => {
 
             <p>
                 Democratic elections have existed in some form for millennia.
+                    <FootnoteGenerator
+                        desc="While Democracy technically dates back to Ancient Greece & Rome, when discussing the system we are often referring specifically to Representative Democracy, wherein elections decide the representatives that handle the actual running of the State. This system is much more modern, dating back to the 17th century."
+                        link="https://www.britannica.com/topic/election-political-science"
+                        ref={ref} setFootnote={props.setFootnote}
+                    />
                 Conceptually, they are a mechanism by which the needs of a society can be voiced, aggregated and mobilized to either directly enact legislation or elect legislators into power.
                 Historically, however, the electorate has excluded large portions of society, a restriction enforced by people in power typically in service to their interests or their biases.
+                    <FootnoteGenerator
+                        desc="The 19th Amendment for Women's suffrage remained in limbo for a full 40 years before being finally being passed by both the House of Representatives and the Senate. This passage wasn't Society's Inevitable Convergence Towards The Good; it was due to the tireless efforts of strong willed women, several of whom were imprisoned, neglected and tortured. People smarter than me have written far more informatively on the history here."
+                        link="https://www.bookbrowse.com/reviews/index.cfm/book_number/3720/the-womans-hour"
+                        ref={ref} setFootnote={props.setFootnote}
+                    />
+                    <FootnoteGenerator
+                        desc="While people of color's right to vote is often discussed in the context of the 20th century, that right had already been amended into the constitution during the late 1800's reconstruction. The 1965's Voting Rights Act of 1965 (and the Civil Rights Act of 1964) fought back against the practice of 'disenfranchisement by any other name' - poll taxes, segregation, literacy tests, voter intimidation, and the like. The success of the Act, as I understand, was in providing a firm legal basis for charging those guilty of disenfranchising others. Again, I'm no expert here and will point to others who have covered this subject more holistically."
+                        link="https://dp.la/primary-source-sets/voting-rights-act-of-1965/additional-resources"
+                        ref={ref} setFootnote={props.setFootnote}
+                    />
                 These exclusions are nothing short of a failure of democracy, and deserve dedicated analysis in their own right.
             </p>
 
@@ -31,7 +47,13 @@ const IdealElectionScreen = React.forwardRef((props, ref) => {
                 <li>Give everyone an equal voice</li>
                 <li>Limit each voter to one ballot</li>
                 <li>Ensure the candidate with the least votes isn't elected</li>
-                <li>Ensure the candidate who wins a majority of the votes is elected</li>
+                <li>Ensure the candidate who wins a majority of the votes is elected
+                    <FootnoteGenerator
+                        desc="Just a subtle point: Elections that only elect people with ≥ 50% of the vote fall under the category of Majoritarianism. Pluralism, the practice of electing whoever gets the largest proportion of votes, will pick a majority candidate if there is one; but it will also settle for whoever got the most votes, setting a lower bar than Majoritarian systems."
+                        ref={ref} setFootnote={props.setFootnote}
+                    />
+                </li>
+
             </ul>
 
             <p>
@@ -46,6 +68,11 @@ const IdealElectionScreen = React.forwardRef((props, ref) => {
                 Additionally, the way Electors are apportioned to the states depends only somewhat, not entirely, on state population;
                 each state gets 2 by default.
                 The result is that in certain states, votes can "weigh" more than other votes in terms of how much they contribute to each member of the overall Electoral College.
+                    <FootnoteGenerator
+                        desc="Dale R. Durran does a fantastic job crafting an interactive exploration of 'vote weight'. Bastardizing his work here would only be an insult, so peruse the original work instead."
+                        link="Regarding Vote Weight: https://theconversation.com/whose-votes-count-the-least-in-the-electoral-college-74280"
+                        ref={ref} setFootnote={props.setFootnote}
+                    />
                 Things only get more contentious from here.
             </p>
 

@@ -42,17 +42,17 @@ const FootnoteGenerator = React.forwardRef((props, ref) => {
 const Footnote = React.forwardRef((props, ref) => {
     const { footnoteNum, footnoteLink, footnoteDesc } = props;
     return (
-        <div ref={ref} className="shadow footnote-container">
+        <div ref={ref} className="shadow-lg footnote-container">
             <div className="container d-flex justify-content-between align-items-start">
                 <div className="footnote-text">
                     {formatContent(footnoteNum, footnoteDesc)}
                     {footnoteLink && (
                         <div className="d-block">
-                            Link: <a href={footnoteLink} target="_blank" rel="noopener noreferrer">{footnoteLink}</a>
+                            <a href={footnoteLink} target="_blank" rel="noopener noreferrer">{footnoteLink}</a>
                         </div>
                     )}
                 </div>
-                <button type="button" className="close" onClick={() => closeFootnote(ref)} aria-label="Close">
+                <button type="button" className="close ml-2" onClick={() => closeFootnote(ref)} aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
