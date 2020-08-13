@@ -1,6 +1,6 @@
 {
-  "name": "electionsandtournaments",
-  "homepage": "http://dtphelan1.github.io/electionsandtournaments",
+  "name": "elections",
+  "homepage": "http://dtphelan1.github.io/elections",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
