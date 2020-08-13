@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75674ce8aaf0216df36e2a9894fda53c",
+    "revision": "be8310441df24fc1fd2970e08347328a",
     "url": "/electionsandtournaments/index.html"
   },
   {
-    "revision": "41b6225a695838c0a183",
+    "revision": "fcbda28ea856a7b904ce",
     "url": "/electionsandtournaments/static/css/main.7d20ed8b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/electionsandtournaments/static/js/2.7294541a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "41b6225a695838c0a183",
-    "url": "/electionsandtournaments/static/js/main.3845eef0.chunk.js"
+    "revision": "fcbda28ea856a7b904ce",
+    "url": "/electionsandtournaments/static/js/main.60d3b8ca.chunk.js"
   },
   {
     "revision": "f5fdddf1d6b72ad884ea",
