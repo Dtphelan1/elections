@@ -74,7 +74,7 @@ const NextStepsScreen = React.forwardRef((props, ref) => {
                 Undergirding our democratic process, they are of critical importance and demand of us due attention;
                 their efficacy in reflecting the will of the people should not be taken for granted.
                 Investigation of that efficacy needs to be rigorous, driven by practical concerns, and above all else grounded in demonstrable evidence.
-                And when that inquiry yields unsatisfying conclusions, it's our civic duty to support the building of and voting for better systems.
+                And when that inquiry yields unsatisfying conclusions, it's our civic duty to support the consideration, building and thoughtful adoption of better systems.
                 Continue learning more about voting systems, the mathematics that underpin them, and try to see how you can play a role in improving the voting systems around you.
             </p>
             <p>
