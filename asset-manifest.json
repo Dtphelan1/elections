@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/electionsandtournaments/static/css/main.c255e9a2.chunk.css",
-    "main.js": "/electionsandtournaments/static/js/main.fbb82819.chunk.js",
-    "main.js.map": "/electionsandtournaments/static/js/main.fbb82819.chunk.js.map",
+    "main.css": "/electionsandtournaments/static/css/main.7d20ed8b.chunk.css",
+    "main.js": "/electionsandtournaments/static/js/main.3845eef0.chunk.js",
+    "main.js.map": "/electionsandtournaments/static/js/main.3845eef0.chunk.js.map",
     "runtime-main.js": "/electionsandtournaments/static/js/runtime-main.537a2279.js",
     "runtime-main.js.map": "/electionsandtournaments/static/js/runtime-main.537a2279.js.map",
-    "static/js/2.d55345d8.chunk.js": "/electionsandtournaments/static/js/2.d55345d8.chunk.js",
-    "static/js/2.d55345d8.chunk.js.map": "/electionsandtournaments/static/js/2.d55345d8.chunk.js.map",
+    "static/js/2.7294541a.chunk.js": "/electionsandtournaments/static/js/2.7294541a.chunk.js",
+    "static/js/2.7294541a.chunk.js.map": "/electionsandtournaments/static/js/2.7294541a.chunk.js.map",
     "index.html": "/electionsandtournaments/index.html",
-    "precache-manifest.a9b906baa80892c8815a610bdf475d81.js": "/electionsandtournaments/precache-manifest.a9b906baa80892c8815a610bdf475d81.js",
+    "precache-manifest.40e4d5322552e7744f03d97194a39356.js": "/electionsandtournaments/precache-manifest.40e4d5322552e7744f03d97194a39356.js",
     "service-worker.js": "/electionsandtournaments/service-worker.js",
-    "static/css/main.c255e9a2.chunk.css.map": "/electionsandtournaments/static/css/main.c255e9a2.chunk.css.map",
-    "static/js/2.d55345d8.chunk.js.LICENSE.txt": "/electionsandtournaments/static/js/2.d55345d8.chunk.js.LICENSE.txt",
+    "static/css/main.7d20ed8b.chunk.css.map": "/electionsandtournaments/static/css/main.7d20ed8b.chunk.css.map",
+    "static/js/2.7294541a.chunk.js.LICENSE.txt": "/electionsandtournaments/static/js/2.7294541a.chunk.js.LICENSE.txt",
+    "static/media/black-voting-box.jpg": "/electionsandtournaments/static/media/black-voting-box.7f7651d2.jpg",
     "static/media/complete-tournament.879eec74.svg": "/electionsandtournaments/static/media/complete-tournament.879eec74.svg",
     "static/media/incomplete-tournament.93604def.svg": "/electionsandtournaments/static/media/incomplete-tournament.93604def.svg",
-    "static/media/paradoxical-tournament.46328a49.svg": "/electionsandtournaments/static/media/paradoxical-tournament.46328a49.svg"
+    "static/media/paradoxical-tournament.46328a49.svg": "/electionsandtournaments/static/media/paradoxical-tournament.46328a49.svg",
+    "static/media/WelcomeScreen.scss": "/electionsandtournaments/static/media/voting-day.fec42f22.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.537a2279.js",
-    "static/js/2.d55345d8.chunk.js",
-    "static/css/main.c255e9a2.chunk.css",
-    "static/js/main.fbb82819.chunk.js"
+    "static/js/2.7294541a.chunk.js",
+    "static/css/main.7d20ed8b.chunk.css",
+    "static/js/main.3845eef0.chunk.js"
   ]
 }
