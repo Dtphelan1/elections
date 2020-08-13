@@ -10,7 +10,7 @@ const IdealElectionScreen = React.forwardRef((props, ref) => {
             <p>
                 Democratic elections have existed in some form for millennia.
                     <FootnoteGenerator
-                        desc="While Democracy technically dates back to Ancient Greece & Rome, when discussing the system we are often referring specifically to Representative Democracy, wherein elections decide the representatives that handle the actual running of the State. This system is much more modern, dating back to the 17th century."
+                        desc="While Democracy technically dates back to Ancient Greece & Rome, the form of Democracy we typically talk about is Representative Democracy, wherein elections decide the representatives that handle the actual running of the State. This system is more modern and dates back to closer to the 17th century."
                         link="https://www.britannica.com/topic/election-political-science"
                         ref={ref} setFootnote={props.setFootnote}
                     />
@@ -22,7 +22,7 @@ const IdealElectionScreen = React.forwardRef((props, ref) => {
                         ref={ref} setFootnote={props.setFootnote}
                     />
                     <FootnoteGenerator
-                        desc="While people of color's right to vote is often discussed in the context of the 20th century, that right had already been amended into the constitution during the late 1800's reconstruction. The 1965's Voting Rights Act of 1965 (and the Civil Rights Act of 1964) fought back against the practice of 'disenfranchisement by any other name' - poll taxes, segregation, literacy tests, voter intimidation, and the like. The success of the Act, as I understand, was in providing a firm legal basis for charging those guilty of disenfranchising others. Again, I'm no expert here and will point to others who have covered this subject more holistically."
+                        desc="While people of color's right to vote is often discussed in the context of the 20th century, that right had already been amended into the constitution during the late 1800's reconstruction. The Voting Rights Act of 1965 (and the Civil Rights Act of 1964) fought back against the practice of 'disenfranchisement by any other name' - poll taxes, segregation, literacy tests, voter intimidation, and the like. The success of the Act, as I understand, was in providing a firm legal basis for charging those guilty of disenfranchising others. Again, I'm no expert here and will point to others who have covered this subject more holistically."
                         link="https://dp.la/primary-source-sets/voting-rights-act-of-1965/additional-resources"
                         ref={ref} setFootnote={props.setFootnote}
                     />

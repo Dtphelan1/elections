@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 let num = 0;
 
-const formatContent = (i, desc) => `[${i}]: ${desc} `
+const formatDesc = (i, desc) => `[${i}]: ${desc} `
 
 function onClick(ref, num, link, desc, setFootnote) {
     if (ref.current && ref.current.style.opacity !== 1) {
@@ -42,10 +42,10 @@ const FootnoteGenerator = React.forwardRef((props, ref) => {
 const Footnote = React.forwardRef((props, ref) => {
     const { footnoteNum, footnoteLink, footnoteDesc } = props;
     return (
-        <div ref={ref} className="shadow-lg footnote-container">
+        <div ref={ref} className="footnote-container">
             <div className="container d-flex justify-content-between align-items-start">
                 <div className="footnote-text">
-                    {formatContent(footnoteNum, footnoteDesc)}
+                    {footnoteDesc && formatDesc(footnoteNum, footnoteDesc)}
                     {footnoteLink && (
                         <div className="d-block">
                             <a href={footnoteLink} target="_blank" rel="noopener noreferrer">{footnoteLink}</a>

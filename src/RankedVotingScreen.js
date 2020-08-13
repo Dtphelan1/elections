@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSection from './PageSection';
+import {FootnoteGenerator} from './FootnoteGenerator'
 
 const RankedVotingScreen = React.forwardRef((props, ref) => {
     return (
@@ -7,14 +8,24 @@ const RankedVotingScreen = React.forwardRef((props, ref) => {
             <h1>Ranked Voting: Moving Beyond One Choice</h1>
 
             <p>
-                Ranked Voting is precisely what it sounds like: a voting system that lets voters rank candidates in terms of preference.
+                Ranked Voting
+                <FootnoteGenerator
+                    desc="Not to be confused with Ranked Choice Voting (RCV), the popular name for Instant Runoff Voting/Single Transferrable Vote systems in the US. RCV is a type of Ranked Voting system, but is far from the only type."
+                    link="https://en.wikipedia.org/wiki/Ranked_voting"
+                    ref={ref} setFootnote={props.setFootnote}
+                />
+                is precisely what it sounds like: a voting system that lets voters rank candidates in terms of preference.
                 This additional information is then used to narrow down candidates in the event that none capture a unanimous majority.
                 In addition to helping us with building tournaments, ranked ballots can help alleviate the Spoiler Effect and Tactical Voting trend we observed earlier.
+                <FootnoteGenerator
+                    desc="'Alleviate' here is used with great intention; these effects can and do still occur with ranked voting systems, but the argument is that their frequency and severity is diminished. We'll discuss this fact later."
+                    ref={ref} setFootnote={props.setFootnote}
+                />
             </p>
             <div className="row d-flex align-items-md-center">
                 <div className="col-md-6">
                     <p>
-                        In the context of building our 'tournament', these preferences determine who would win in 1-on-1 elections, providing the information we need to direct our edges.
+                        In the context of building our tournament, these preferences determine who would win in 1-on-1 elections, providing the information we need to direct our edges.
                         Let's return to Examplandia to see how a Ranked Voting ballot could be used.
                     </p>
 
@@ -31,8 +42,8 @@ const RankedVotingScreen = React.forwardRef((props, ref) => {
                         Consider <span className="text-primary">Calista</span> v. <span className="text-primary">Rosie</span>.
                         For each row in the table above, <span className="text-primary">Calista</span> gets the corresponding votes if C comes before R.
                         Similarly, <span className="text-primary">Rosie</span> gets that row's votes if R comes before C.
-                        We can compare the total votes each candidate received across all preference combinations to determine our 1-on-1.
-                        In the table below, we do this for all 1-on-1's matchups.
+                        We can compare the total votes each candidate received across all preference combinations to determine our 1-on-1 outcomes.
+                        In the table below, we do this for all 1-on-1's pairings.
                     </p>
                 </div>
                 <div className="col-md-6">

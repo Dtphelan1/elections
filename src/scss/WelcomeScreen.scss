@@ -1,6 +1,10 @@
 @import './variables';
 
 #welcome-page  {
+    background: url("../img/voting-day.jpg");
+    background-size: cover;
+    position: relative;
+    min-height: 90vh;
     .page-content {
         padding-top: 8vh;
     }

@@ -2,6 +2,7 @@ import React from 'react';
 import PageSection from './PageSection'
 import Citation from './Citation';
 import { FootnoteGenerator } from './FootnoteGenerator.js'
+import voting from './img/black-voting-box.jpg'
 const FramingScreen = React.forwardRef((props, ref) => {
     return (
         <PageSection className="text-left">
@@ -11,7 +12,7 @@ const FramingScreen = React.forwardRef((props, ref) => {
                 <div className="col-sm-12 col-md-6">
                     <p>
                         2020 is a major election year in the US.
-                        In November, the country will deicide who will be our President for the next 1460 days.
+                        In November, the country will decide who will be our President for the next 1460 days.
                         As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.
                             <FootnoteGenerator
                                 desc="Based on articles from the NIH."
@@ -45,7 +46,7 @@ const FramingScreen = React.forwardRef((props, ref) => {
                 </div>
                 <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
                     <div className="position-relative">
-                        <img src={`${process.env.PUBLIC_URL}/img/black-voting-box.jpg`} alt="" style={{ objectFit: "cover", height: "100%", maxHeight: "215px" }} />
+                        <img src={voting} alt="" style={{ objectFit: "cover", height: "100%", maxHeight: "215px" }} />
                         <Citation>
                             Photo by Element5 Digital from Pexels
                         </Citation>
