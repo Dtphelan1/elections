@@ -9,14 +9,14 @@ const NextStepsScreen = React.forwardRef((props, ref) => {
 
             <p>
                 We've discussed briefly the motivations behind democratic elections, and how those motivations are often at odds with political realities.
-                Swiftly, we stepped away the muck and mire of real world constraints to discuss abstract properties of voting systems.
+                Swiftly we stepped away the muck and mire of real world constraints to discuss abstract properties of voting systems.
                 In particular, we investigated two approaches to ballot structure - <b>First Past The Post systems, and Ranked Voting systems</b>.
             </p>
             <p>
-                By looking to FPTP in Examplandia, we examined some of the ways these ballot structures can impact election results, developing a vocabulary for the unsatisfying outcomes we saw:
+                By looking to FPTP in Examplandia, we examined some of the ways this ballot structure can impact election results, developing a vocabulary for the unsatisfying outcomes we saw:
                 The <b>Spoiler Effect</b> disadvantages candidates when similar ones run alongside them, especially in FPTP systems.
-                <b> Tactical Voting</b> is the practice of voting for electable candidates, not preferred candidate, and makes it hard for new candidates to gain a foothold.
-                And the fact that our winning candidate didn't beat any competitors 1-on-1 demonstrates a failure to satisfy the <b>Condorcet Criterion</b>.
+                <b> Tactical Voting</b> is the practice of voting for electable candidates, not preferred candidates, and makes it hard for non-traditional parties or beliefs to gain a foothold.
+                And the fact that our winning candidate didn't beat any competitors 1-on-1 demonstrated a failure to satisfy the <b>Condorcet Criterion</b>.
             </p>
             <p>
                 We've seen how Ranked Voting can alleviate these negative effects and, in some cases, guarantee the Condorcet Criterion is satisfied.
@@ -29,27 +29,30 @@ const NextStepsScreen = React.forwardRef((props, ref) => {
                 This only scratches the surface.
             </p>
             <p>
-                There are numerous other Condorcet and Smith Efficient Ranked Voting systems that we haven't had the time to explore here.
-                Notably, the <b>"Schulze"</b> method meets both these criteria and has become the <i>de facto</i> voting standard for many organizations.
+                There are numerous other Condorcet and Smith Efficient, Ranked Voting systems that we haven't had the time to explore here.
+                Notably, the <b>"Schulze"</b> method meets both these criteria and has become the <i>de facto</i> voting standard for many digital organizations.
                 <FootnoteGenerator
-                    desc="Full details on the method, its satisfied criteria and its adoptee organizations are found below. Interestingly, many organizations who employ the Schulze method are large advocates of the open-source software movement. A few examples of note: Ubuntu, Debian, Haskell, The Gentoo Foundation. The list continues on the page below."
+                    desc="Full details on the method, its satisfied criteria and its adopting organizations are found below. Interestingly, many organizations who employ the Schulze method are large advocates of the open-source software movement. A few examples of note: Ubuntu, Debian, Haskell, The Gentoo Foundation – the list continues on the page below."
                     link="https://en.wikipedia.org/wiki/Schulze_method"
                     ref={ref} setFootnote={props.setFootnote}
                 />
                 Systems like Score Voting,
                 <FootnoteGenerator
-                    desc="More on Score Voting found below."
+                    desc="More on Score Voting can be found below."
                     link="https://en.wikipedia.org/wiki/Score_voting"
                     ref={ref} setFootnote={props.setFootnote}
                 />
                 which allow voters to assign scores to candidates,
                 and Approval Voting,
                 <FootnoteGenerator
-                    desc="More on Approval Voting found below"
+                    desc="More on Approval Voting can be found below."
                     link="https://en.wikipedia.org/wiki/Comparison_of_electoral_systems"
                     ref={ref} setFootnote={props.setFootnote}
                 />
-                which allow voters to select all candidates they approve of, offer alternative voting methods altogether with their own assortment of specific systems, successes and shortcomings.
+                which allow voters to select all candidates they approve of, offer alternative ballot methods altogether with their own assortment of specific systems, successes and shortcomings.
+            </p>
+
+            <p>
                 As far as criteria go, there are dozens of additional properties one can consider when evaluating a voting system.
                 <FootnoteGenerator
                     desc="Seriously. Dozens upon dozens."
@@ -65,7 +68,7 @@ const NextStepsScreen = React.forwardRef((props, ref) => {
             </p>
             <p>
                 Taking the practical dimension further, there are organizations active all over the US working to educate the public on different voting systems.
-                Collectives and local ballot initiatives have emerged nationwide as grassroots organizers band together to demand more of their voting systems.
+                Collectives and local ballot initiatives have emerged nationwide as grassroots organizers band together to demand more of their elections.
                 Here in Massachusetts, the <a href="https://voterchoice2020.org/who-we-are/">"Yes on 2"</a> campaign has recently succeeded in securing a spot on the November ballot.
                 In only a few months, MA residents will decide whether the state will use the Instant Runoff Voting system in future state elections.
             </p>

@@ -16,8 +16,8 @@ const RankingsAndTournamentsScreen = React.forwardRef((props, ref) => {
                         In addition to the open question regarding <span className="text-primary">Calista</span> and <span className="text-primary">Rosie</span>, our ballots provide definitive information about how <span className="text-secondary">Bennie</span> fares against each <span className="text-primary">Red</span> party candidate.
                         This information lets us move beyond speculation and back into the realm of certainty.
                         <span className="text-primary"> Calista</span>, based on these preferences, would have beaten any candidate 1-on-1.
-                        This makes her our Condorcet Winner, a strong reason for her to win the election.
-                        And while the result may be worse for <span className="text-primary">Bennie</span>, the result better captures the people's preferences.
+                        This makes her our Condorcet Winner, a strong argument for her to win the election.
+                        And while the result may be worse for <span className="text-secondary">Bennie</span>, the result better captures the people's preferences.
                     </p>
                     <p>
                         But will a tournament always produce a Condorcet Winner?
@@ -42,7 +42,7 @@ const RankingsAndTournamentsScreen = React.forwardRef((props, ref) => {
                 In a 2-paradoxical tournament, every set of two contestants has some other contestant they both lose to.
                 K-paradoxical tournaments are those in which, for every set of k-contestants, there is some other contestant that beats every member of the set.
                 In the case of a 1-paradoxical tournament, there is no Condorcet Winner.
-                While the term '1-paradoxical' is common in Graph Theory contexts, the term for this phenomenon is a voting theory context is the <b>Condorcet Paradox</b>.
+                While the term '1-paradoxical' is common in graph theory contexts, the voting theory term for this phenomenon is the <b>Condorcet Paradox</b>.
             </p>
             <p>
                 How could a paradox like this play out in Examplandia?
@@ -111,17 +111,17 @@ const RankingsAndTournamentsScreen = React.forwardRef((props, ref) => {
             <p>
                 1: It's too restrictive to say that elections <i>must</i> select a Condorcet Winner, because sometimes there is none.
                 We want elections that will select such a winner <i>if one exists</i>.
-                There's a property related to the Condorcet Winner in a graph, called the <b>Smith Set</b>.
+                This brings us to a related property of graphs called the <b>Smith Set</b>.
                 <FootnoteGenerator
                     desc="Named after mathematician John H Smith, detailed information on Smith Sets and Smith Efficiency can be found below."
                     link="https://en.wikipedia.org/wiki/Smith_set"
                     ref={ref} setFootnote={props.setFootnote}
                 />
-                The Smith Set is composed of the candidates that all beat one another, and is always well-defined for a tournament.
+                The Smith Set is composed of the candidates that beat all candidates not inside the Smith Set, and is always well-defined for a tournament.
                 When there's a Condorcet Winner, the Smith Set only has one member;
                 in the paradoxical tournament above, the Smith Set contains all our candidates.
                 And in examples where some candidates only get small fractions of the vote, they would likely be excluded from the Smith Set.
-                Voting systems that always select members of the Smith Set are <b>Smith Efficient</b>.
+                Voting systems that always elect members of the Smith Set are <b>Smith Efficient</b>.
                 But we cannot expect voting systems to find a Condorcet winner if there is none.
             </p>
             <p>

@@ -16,25 +16,25 @@ const RankedVotingScreen = React.forwardRef((props, ref) => {
                 />
                 is precisely what it sounds like: a voting system that lets voters rank candidates in terms of preference.
                 This additional information is then used to narrow down candidates in the event that none capture a unanimous majority.
-                In addition to helping us with building tournaments, ranked ballots can help alleviate the Spoiler Effect and Tactical Voting trend we observed earlier.
+                In addition to helping us build tournaments, ranked ballots can alleviate the Spoiler Effect and Tactical Voting, two shortcomings of FPTP that we observed earlier.
                 <FootnoteGenerator
-                    desc="'Alleviate' here is used with great intention; these effects can and do still occur with ranked voting systems, but the argument is that their frequency and severity is diminished. We'll discuss this fact later."
+                    desc="'Alleviate' here is used with careful intent; these effects can and do still occur with ranked voting systems, but the argument claims that their frequency and severity is relatively diminished."
                     ref={ref} setFootnote={props.setFootnote}
                 />
             </p>
             <div className="row d-flex align-items-md-center">
                 <div className="col-md-6">
                     <p>
-                        In the context of building our tournament, these preferences determine who would win in 1-on-1 elections, providing the information we need to direct our edges.
+                        In the context of building our tournament, these preferences provide the information we need to direct our edges.
                         Let's return to Examplandia to see how a Ranked Voting ballot could be used.
                     </p>
 
                     <p>
                         It's four years later, and the same three candidates - <span className="text-primary">Crimson Calista,</span> <span className="text-primary"> Ruby Rosie, </span> and <span className="text-secondary"> Blue Bennie </span> - are in the running again for president.
                         This time, however, the <span className="text-primary">Red Party's</span> legislators rallied to pass a Ranked Voting system.
-                        With three candidates, there are six unique ranking that voters could express.
+                        With three candidates overall, there are six unique ranking that voters could express.
                         Provided are the results of this year's election.
-                        Note that every vote will match one of the possible candidate rankings orderings.
+                        Note that every vote will match one of the possible candidate rankings.
                     </p>
 
                     <p>
@@ -43,6 +43,9 @@ const RankedVotingScreen = React.forwardRef((props, ref) => {
                         For each row in the table above, <span className="text-primary">Calista</span> gets the corresponding votes if C comes before R.
                         Similarly, <span className="text-primary">Rosie</span> gets that row's votes if R comes before C.
                         We can compare the total votes each candidate received across all preference combinations to determine our 1-on-1 outcomes.
+                    </p>
+
+                    <p>
                         In the table below, we do this for all 1-on-1's pairings.
                     </p>
                 </div>
@@ -89,7 +92,7 @@ const RankedVotingScreen = React.forwardRef((props, ref) => {
                 </div>
             </div>
             <table className="table table-striped table-responsive-sm">
-                <caption>All 1-on-1 Election Results, Based on Preferences</caption>
+                <caption>All 1-on-1 Election Results, Based on Rankings</caption>
                 <thead className="thead-dark">
                     <tr>
                         <th>Ordering</th>

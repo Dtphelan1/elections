@@ -40,7 +40,7 @@ const RankedSystemsScreen = React.forwardRef((props, ref) => {
             </p>
 
             <p>
-                These are only a few of the many different Condorcet Methods, and each one has significant research and a following behind it.
+                These are only a few of the many different Condorcet Methods, and each one has significant research dissecting its pros and cons.
                 There are also some Ranked Voting systems that aren't Condorcet Methods.
                 Arguably one of the most popular Ranked Voting systems, <b>"Instant Runoff Voting"/"Ranked Choice Voting"</b>,
                 <FootnoteGenerator
@@ -72,7 +72,7 @@ const RankedSystemsScreen = React.forwardRef((props, ref) => {
                         This permutation on the Spoiler Effect is not just mathematically possible, but much like the Singapore example from earlier has happened in recent history.
                         Specifically, Burlington, Vermont's 2009 mayoral election saw this outcome, inspiring the city to repeal IRV and reinstate FPTP.
                         <FootnoteGenerator
-                            desc="The fact that the victor, Bob Kiss, was neither the Condorcet winner nor the plurality winner multiplied the controversy. IRV critics seized this outcome as an opportunity to highlighting some of the shortcomings of this system. More details on the fallout of this election can be found below."
+                            desc="The fact that the victor, Bob Kiss, was neither the Condorcet winner nor the plurality winner multiplied the controversy. IRV critics seized this outcome as an opportunity to highlight some of RCV/IRV's shortcomings. More details on the fallout of this election can be found below."
                             link="https://www.fairvote.org/rcv"
                             ref={ref} setFootnote={props.setFootnote}
                         />
@@ -138,7 +138,7 @@ const RankedSystemsScreen = React.forwardRef((props, ref) => {
                 But let's back up a second - why are we even discussing methods that don't meet our Condorcet Criterion?
                 As we recognized when we began this exploration, it's critical that our analysis of voting systems be grounded in certainty.
                 Precise analysis permits objective, nonpartisan discussions about different voting algorithms, their pros, and their cons.
-                While not meeting the Condorcet Criterion is a con, failing in that regard doesn't disqualify a system unilaterally.
+                But while not meeting the Condorcet Criterion is a con, failing in that regard doesn't disqualify a system unilaterally.
             </p>
 
             <p>

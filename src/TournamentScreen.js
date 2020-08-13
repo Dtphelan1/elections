@@ -31,6 +31,10 @@ const TournamentScreen = React.forwardRef((props, ref) => {
                 Graphs are tools for modeling some set of entities and relationships between pairs of them.
                 Every 'graph' is made up of 'vertices' and 'edges'.
                 Each 'vertex' corresponds to an entity, and a relationship between two vertices is represented by an 'edge'.
+                <FootnoteGenerator
+                    desc="More subtly, graphs are the abstract representation of these vertices and edges, not a particular drawing of a graph; the same graph can be drawn infinitely different ways. For the sake of this discussion, we will ignore this distinction."
+                    ref={ref} setFootnote={props.setFootnote}
+                />
             </p>
 
             <div className="row d-flex align-items-center">
@@ -45,8 +49,8 @@ const TournamentScreen = React.forwardRef((props, ref) => {
 
                     <p>
                         In this model, we'll say a head vertex is the loser of the 1-on-1 election, and a tail vertex is the winner.
-                        That means a directed edge from <span className="text-primary">Calista</span> to <span className="text-secondary">Bennie</span> means that, in a 1-on-1 election, <span className="text-primary">Calista</span> (the tail) would beat out <span className="text-secondary">Bennie</span> (the head).
-                        Based on our election outcomes above and the model we've constructed, here's what our graph might look like.
+                        That means a directed edge from <span className="text-primary">Calista</span> to <span className="text-secondary">Bennie</span> tells us that, in a 1-on-1 election, <span className="text-primary">Calista</span> (the tail) would beat <span className="text-secondary">Bennie</span> (the head).
+                        Based on our election outcomes above and the model we've described, here's what our graph might look like.
                     </p>
                 </div>
                 <figure className="col-md-5 d-flex flex-column align-items-center">
@@ -64,9 +68,9 @@ const TournamentScreen = React.forwardRef((props, ref) => {
                 Even the outcomes we have modeled so far are just guesses based on incomplete information.
                 It is possible that, despite party lines,
                     <span className="text-primary"> Ruby Rosie</span> voters resonate with
-                    <span className="text-secondary"> Blue Bennie's</span> campaign enough that would vote
+                    <span className="text-secondary"> Blue Bennie's</span> campaign enough that they would vote
                     <span className="text-secondary"> Bennie</span> instead of
-                    <span className="text-primary"> Crimson Calista</span>.
+                    <span className="text-primary"> Crimson Calista</span> in their respective 1-on-1 match.
                 <b> To construct a tournament, we need more information than what FPTP ballots provide. </b>
                 We need to a different balloting system all together.
                 Specifically, we need one that tells us voter preferences.

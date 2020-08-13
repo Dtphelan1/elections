@@ -11,8 +11,8 @@ const FramingScreen = React.forwardRef((props, ref) => {
             <div className="row d-flex mb-3">
                 <div className="col-sm-12 col-md-6">
                     <p>
-                        2020 is a major election year in the US.
-                        In November, the country will decide who will be our President for the next 1460 days.
+                        2020 is a major election year here in the US.
+                        In November, we as a country will decide our next President, a decision that will greatly impact the following 1460 days.
                         As of writing, it has been over 200 days since the COVID-19 pandemic hit our nation.
                             <FootnoteGenerator
                                 desc="Based on articles from the NIH."
@@ -56,8 +56,11 @@ const FramingScreen = React.forwardRef((props, ref) => {
 
             <p>
                 It is in pursuit of that certainty that we will turn our attention to the mathematics of democratic elections.
-                Specifically, we'll explore what kind of voting system the American presidential election uses, what kind of information that system misses, common pitfalls inherent to that system's structure, and how alternative systems can avoid those pitfalls.
-                By the end of this exploration, hopefully readers will have learned about how different voting systems work, how we would like those systems to work, the chasm between those two concepts, and how we different voting systems can help us bridge that chasm.
+                Specifically,
+                we'll discuss how the American presidential voting system fundamentally works,
+                how we would like voting systems to work in general,
+                the chasm between those two concepts,
+                and how alternative voting systems can help us bridge parts of this gap.
             </p>
         </PageSection>
     );

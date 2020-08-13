@@ -7,13 +7,13 @@ const FirstPastThePostScreen = React.forwardRef((props, ref) => {
         <PageSection className="text-left">
             <h1>First: A "First Past The Post" Example</h1>
             <p>
-                Examplandia is a nation with two relevant political parties – The <span className="text-primary">Red Party</span> and The <span className="text-secondary">Blue Party</span> – and three presidential nominees:
+                Examplandia is a nation with two relevant political parties – the <span className="text-primary">Red Party</span> and the <span className="text-secondary">Blue Party</span> – and three presidential nominees:
                 <span className="text-primary"> Crimson Calista,</span>
                 <span className="text-primary"> Ruby Rosie, </span>
                 and
                 <span className="text-secondary"> Blue Bennie. </span>
                 Nearly 2/3rds of Examplandians are <span className="text-primary">Red Party</span> members, with the remaining 1/3 falling under the <span className="text-secondary">Blue Party</span>.
-                But this election there are two <span className="text-primary">Red Party</span> candidates running, voters split down the middle between them.
+                But in this upcoming election there are two <span className="text-primary">Red Party</span> candidates running, with voters split down the middle between them.
             </p>
             <p>
                 When Election Day arrives <span className="text-secondary">Bennie</span> emerges victorious – and with only 35% of the vote.
@@ -55,17 +55,17 @@ const FirstPastThePostScreen = React.forwardRef((props, ref) => {
                     Only 35.20% of voters actually voted for the winning candidate.
                     The details of that election differ in some important ways, but this real-world result shows candidates can and do win FPTP elections with about one third of votes.
                     <FootnoteGenerator
-                        desc="Most notably being that, in the case of Singapore, the winning candidate was a member of the majority party."
+                        desc="One of the most notable differences being that, in the case of Singapore, the winning candidate was a member of the majority party. But the fact remains: roughly two-thirds of voters did not vote for the elected president."
                         link="http://www.singapore-elections.com/presidential-election/2011/"
                         ref={ref} setFootnote={props.setFootnote}
                     />
                     While these results were a boon for <span className="text-secondary">Bennie</span> and the <span className="text-secondary">Blue Party</span>, most citizens felt robbed.
-                    Many looked at these results and said, "This isn't fair. Something wrong has happened, the system has failed."
+                    Many looked at these results and said, "This isn't fair. Something wrong has happened. The system has failed us!"
                 </p>
                 <p>
-                    But to fix a failing system, we need to understand <i>how and why it fails</i>.
+                    But to fix a failing system, we must understand <i>how and why it fails</i>.
                     Characterizing 'The How' and 'The Why' does more than just help us improve our current system;
-                    it enables us to devise alternative systems, comparing our alternatives rigorously and mathematically, and to demonstrate, with certainty, how these new systems overcome the failures of old ones.
+                    it allows us to devise alternative systems, comparing those alternatives rigorously and mathematically, and to demonstrate with certainty how new systems overcome the failures of old ones.
                 </p>
                 <p>
                     So how exactly were these FPTP election results unfair?
@@ -76,7 +76,7 @@ const FirstPastThePostScreen = React.forwardRef((props, ref) => {
                     The term for vote-splitting across ideological or party lines is called the <b>"Spoiler Effect",</b>
                     <FootnoteGenerator
                         desc="More information on the Spoiler Effect can be found below."
-                        link="http://www.singapore-elections.com/presidential-election/2011/"
+                        link="https://en.wikipedia.org/wiki/Vote_splitting#Spoiler_effect"
                         ref={ref} setFootnote={props.setFootnote}
                     />
                     and it leads to systemic issues that go beyond any single election outcome.
@@ -102,7 +102,7 @@ const FirstPastThePostScreen = React.forwardRef((props, ref) => {
                 <p>
                     The last issue we'll touch on is slightly more involved.
                     We can observe that, in a <i>1-on-1</i> election between <span className="text-primary">Crimson Calista</span> and <span className="text-secondary">Blue Bennie</span>, we'd expect <span className="text-primary">Calista</span> to win.
-                    The same can be said for <span className="text-primary">Ruby Rosie</span>.
+                    The same can be said for <span className="text-primary">Ruby Rosie</span> vs <span className="text-secondary">Blue Bennie</span>.
                     The general term for what we're getting at is known as <b>"The Condorcet Criterion";</b>
                     <FootnoteGenerator
                         desc="This term and subsequent Condorcet-stemmed terminology are eponymous, a tribute to French mathematician/philosopher The Marquis de Condorcet. Historically Condorcet has been credited for observing these important properties of voting systems, but the recently rediscovered notes of 13th century polymath Raymond Llull show Llull came to similar conclusions centuries earlier."
@@ -110,7 +110,7 @@ const FirstPastThePostScreen = React.forwardRef((props, ref) => {
                         ref={ref} setFootnote={props.setFootnote}
                         />
                     we want the person we elect, we'll call our <b>Condorcet Winner</b>, to have been victorious in every 1-on-1 election.
-                    To model these 1-on-1 competitions, we'll use the concept of a 'tournament'.
+                    To find our Condorcet winner and model these 1-on-1 competitions, we'll use the concept of a 'tournament'.
                 </p>
             </div>
         </PageSection>
