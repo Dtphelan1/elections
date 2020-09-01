@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/elections/static/css/main.73d593a8.chunk.css",
-    "main.js": "/elections/static/js/main.1f0e0af5.chunk.js",
-    "main.js.map": "/elections/static/js/main.1f0e0af5.chunk.js.map",
+    "main.js": "/elections/static/js/main.2f96dcbc.chunk.js",
+    "main.js.map": "/elections/static/js/main.2f96dcbc.chunk.js.map",
     "runtime-main.js": "/elections/static/js/runtime-main.2b9aa046.js",
     "runtime-main.js.map": "/elections/static/js/runtime-main.2b9aa046.js.map",
     "static/js/2.47bd92e4.chunk.js": "/elections/static/js/2.47bd92e4.chunk.js",
     "static/js/2.47bd92e4.chunk.js.map": "/elections/static/js/2.47bd92e4.chunk.js.map",
     "index.html": "/elections/index.html",
-    "precache-manifest.e2be42f0206024c6f28e7216192bc886.js": "/elections/precache-manifest.e2be42f0206024c6f28e7216192bc886.js",
+    "precache-manifest.4a34ffa8eb92dc8c784dd461ba9b490d.js": "/elections/precache-manifest.4a34ffa8eb92dc8c784dd461ba9b490d.js",
     "service-worker.js": "/elections/service-worker.js",
     "static/css/main.73d593a8.chunk.css.map": "/elections/static/css/main.73d593a8.chunk.css.map",
     "static/js/2.47bd92e4.chunk.js.LICENSE.txt": "/elections/static/js/2.47bd92e4.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.2b9aa046.js",
     "static/js/2.47bd92e4.chunk.js",
     "static/css/main.73d593a8.chunk.css",
-    "static/js/main.1f0e0af5.chunk.js"
+    "static/js/main.2f96dcbc.chunk.js"
   ]
 }
